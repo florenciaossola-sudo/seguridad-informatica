@@ -377,3 +377,69 @@ Las decisiones son tomadas por el dueño junto con los gerentes.
 ### ¿Cómo se comunican incidentes importantes dentro de la empresa?
 
 Actualmente no existe un procedimiento formal definido.
+
+# Uso de la Inteligencia Artificial en la empresa
+
+## Adopción y alcance
+
+### ¿Utilizan actualmente herramientas de inteligencia artificial en la organización?
+
+### ¿Qué herramientas o plataformas de IA utilizan (por ejemplo, ChatGPT, Copilot, Gemini, Midjourney, herramientas integradas en el ERP o en portales web)?
+
+### ¿En qué áreas o procesos se emplea la IA (ventas, diseño de placas, producción, marketing en redes sociales, finanzas, atención al cliente, importaciones)?
+
+### ¿Quién autoriza o decide el uso de herramientas de IA dentro de la empresa?
+
+### ¿Existen empleados o áreas que utilicen IA de forma informal, sin conocimiento o aprobación de la dirección?
+
+---
+
+## Datos e información compartida con IA
+
+### ¿Qué tipo de información ingresan o comparten con herramientas de IA (datos de clientes, diseños de placas, imágenes conmemorativas, información financiera, datos bancarios, contratos con proveedores)?
+
+### ¿Se ingresan datos personales de clientes o familiares de difuntos en herramientas de IA (nombres, fechas, textos de epitafios, fotografías)?
+
+### ¿Utilizan cuentas gratuitas o de pago? ¿Las herramientas son de uso público (nube compartida) o empresariales con políticas de privacidad definidas?
+
+### ¿Conocen si la información ingresada en esas herramientas se utiliza para entrenar modelos o queda almacenada por el proveedor?
+
+### ¿Existe alguna restricción interna sobre qué datos pueden o no pueden cargarse en sistemas de IA?
+
+---
+
+## Seguridad, privacidad y cumplimiento
+
+### ¿Evaluaron los riesgos de confidencialidad al compartir información sensible con servicios de IA?
+
+### ¿Las herramientas de IA utilizadas cumplen con las obligaciones legales y contractuales de protección de datos de clientes?
+
+### ¿Se informa a los clientes cuando se utiliza IA para elaborar diseños, textos u otro material vinculado a sus pedidos?
+
+### ¿Existen acuerdos de confidencialidad o cláusulas específicas con proveedores de IA?
+
+### ¿Se han registrado incidentes o situaciones de riesgo relacionados con el uso de IA (filtración de datos, contenido inadecuado generado, errores en textos de placas)?
+
+---
+
+## Contenido generado y calidad
+
+### ¿Utilizan IA para generar diseños, grabados, imágenes, textos conmemorativos o material de marketing?
+
+### ¿Quién revisa y valida los resultados generados por IA antes de usarlos con clientes o en producción?
+
+### ¿Existen procedimientos para detectar errores, alucinaciones o contenido inadecuado en material generado por IA (textos incorrectos, símbolos religiosos mal representados, datos erróneos)?
+
+### ¿Se verifica la originalidad y los derechos de autor del contenido generado por IA antes de comercializarlo o entregarlo al cliente?
+
+---
+
+## Gobernanza y políticas
+
+### ¿Existe una política o lineamiento interno sobre el uso seguro y responsable de la inteligencia artificial?
+
+### ¿Recibieron capacitación sobre riesgos de seguridad, privacidad y buenas prácticas en el uso de IA?
+
+### ¿Está previsto integrar herramientas de IA con los ERP, portales web, correo electrónico u otros sistemas críticos de la organización?
+
+### ¿Quién sería responsable de gestionar incidentes o consultas relacionadas con el uso de IA?
