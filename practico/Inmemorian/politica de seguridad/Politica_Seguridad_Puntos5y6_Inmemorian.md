@@ -12,7 +12,7 @@ El relevamiento de la situación actual evidenció que **no existe un inventario
 
 ## Objetivo
 
-Garantizar que los activos de información y tecnología de Inmemorian reciban un nivel de protección acorde a su criticidad y sensibilidad.
+Identificar, clasificar y proteger adecuadamente los activos de información de Inmemorian, asignando a cada uno un responsable y un nivel de protección acorde a su criticidad e impacto potencial sobre la operación.
 
 ## Alcance
 
@@ -56,42 +56,43 @@ En su carácter de administrador de servidores, red, usuarios, accesos y los dos
 
 ## 5.1. Inventario de Activos
 
-Se identificarán los activos importantes asociados a cada sistema de información, sus respectivos propietarios y su ubicación, para elaborar un inventario con dicha información. El inventario será actualizado ante cualquier modificación —incorporación, reemplazo, baja o traslado de equipos—.
+Se deberá confeccionar y mantener actualizado un **inventario de activos de información** que incluya, como mínimo, los siguientes tipos de activos identificados en el relevamiento:
 
-> **Situación actual:** no existe un proceso definido para la gestión de altas y bajas de equipos. La implementación del inventario constituye una acción prioritaria del presente plan.
+### Activos de Hardware
 
-El encargado de elaborar el inventario de cada área y mantenerlo actualizado es el **gerente responsable del sector**, en coordinación con el proveedor externo de sistemas para los activos técnicos centralizados.
+| Activo | Cantidad | Locación | Observaciones |
+|---|---|---|---|
+| Estaciones de trabajo (PC corporativas) | 6 | Parque Industrial (3), Local Inmemorian (1), Local La Roca (2) | La mayoría con sistemas operativos obsoletos sin soporte. |
+| Computadoras portátiles personales | 2 | Variable (modalidad híbrida) | Equipos personales usados para trabajo. Sin controles de seguridad. |
+| Teléfonos móviles corporativos | 2 | Local Inmemorian (1), Local La Roca (1) | Usados para comunicación con clientes vía WhatsApp e Instagram. |
+| Módems/routers WiFi | 3 | Parque Industrial (1), Local Inmemorian (1), Local La Roca (1) | Redes ad-hoc sin segmentación. Sin firewall perimetral. |
+| Servidores | A relevar | A relevar | Administrados por el proveedor externo de sistemas. |
 
-Como mínimo, el inventario deberá registrar:
+### Activos de Software
 
-| Campo | Descripción |
-|---|---|
-| Identificación del activo | Nombre, tipo y número de serie o identificador único |
-| Categoría | Hardware, software, servicio, información o medio de almacenamiento |
-| Propietario | Gerente o área responsable del activo |
-| Ubicación | Parque Industrial, Local Inmemorian o Local La Roca |
-| Criticidad | Baja, media o alta (según clasificación del punto 5.2) |
-| Usuarios autorizados | Personas o roles con acceso legítimo |
-| Estado | Activo, obsoleto, en reemplazo o dado de baja |
+| Activo | Tipo | Observaciones |
+|---|---|---|
+| ERP (sistema 1) | Crítico | Administrado por el proveedor externo de sistemas. |
+| ERP (sistema 2) | Crítico | Administrado por el proveedor externo de sistemas. |
+| Portales web | Crítico | Utilizados por las gerencias de ventas. |
+| Correo electrónico | Crítico | Administrado por los dueños. |
+| Sistemas operativos Windows | Crítico | La mayoría sin soporte ni actualizaciones de seguridad. |
+| WhatsApp / Instagram / Facebook | Complementario | Utilizados operacionalmente por ventas, producción y logística. Sin controles corporativos. |
+| Software adicional de estaciones de trabajo | A relevar | Los usuarios pueden instalar software libremente; no existe control de licenciamiento. |
 
-A continuación se detalla el inventario preliminar de activos tecnológicos relevados, que deberá ser formalizado y completado por cada gerente:
+### Activos de Información
 
-| Activo | Tipo | Ubicación | Propietario | Observación |
-|---|---|---|---|---|
-| PC producción | Estación de trabajo | Parque Industrial | Gerencia de Producción | Cuenta compartida; privilegios administrativos |
-| 2 PC dueños | Estación de trabajo | Parque Industrial | Dueños | Administran correo electrónico corporativo |
-| PC ventas | Estación de trabajo | Local Inmemorian | Gerencia Ventas Placas | Cuenta compartida; uso de WhatsApp y redes sociales |
-| 2 PC ventas | Estación de trabajo | Local La Roca | Gerencia Ventas Mesadas | Cuentas compartidas |
-| 2 laptops personales | Equipo BYOD | Variable | Según usuario | Sin controles de seguridad |
-| 2 móviles corporativos | Dispositivo móvil | Locales comerciales | Gerencias de ventas | Uso de WhatsApp para datos de clientes |
-| 3 módem/router WiFi | Infraestructura de red | Cada locación | Proveedor de sistemas | Sin firewall perimetral |
-| 2 ERP | Sistema de negocio | Servidor (administrado externamente) | Proveedor de sistemas | Dependencia crítica (~75 % operación) |
-| Portales web | Aplicación | Servidor (administrado externamente) | Proveedor de sistemas | Ventas y gestión comercial |
-| Correo electrónico | Servicio | Administrado por dueños | Dueños | Sin filtros anti-spam ni anti-phishing |
-| WhatsApp / redes sociales | Canal de comunicación | Móviles y PCs | Gerencias de ventas y logística | Intercambio de datos sensibles de clientes |
+| Activo | Área responsable | Observaciones |
+|---|---|---|
+| Datos de clientes (nombre, contacto, pedidos) | Gerencias de Ventas | Circulan por WhatsApp, redes sociales y ERP. Alcanzados por Ley 25.326. |
+| Datos bancarios de clientes | Gerencias de Ventas / Dueños | Alta sensibilidad. Se comparten por canales informales. |
+| Información financiera y contable | Finanzas (proveedor externo) | Accedida por el proveedor externo de finanzas. |
+| Diseños de placas conmemorativas e imágenes | Gerencias de Ventas | Generados y compartidos digitalmente con clientes. |
+| Registros operativos de producción | Gerencia de Producción | Gestionados a través del ERP. |
+| Información de importaciones y compras | Proveedor externo de importaciones | Gestionada por el proveedor externo. |
+| Credenciales de acceso a sistemas | Todos los usuarios | Actualmente sin vencimiento. Varias cuentas compartidas en producción y ventas. |
 
-El inventario deberá incluir asimismo el registro de software instalado en cada equipo, con el fin de revertir la **ausencia actual de control sobre el licenciamiento de software** y la práctica habitual de instalación libre de programas por parte de los usuarios.
-
+> **Acción prioritaria:** el inventario de activos deberá confeccionarse como una de las primeras acciones del plan, dado que actualmente no existe ningún registro formal. Sin inventario, no es posible gestionar adecuadamente las protecciones descritas en los puntos siguientes.
 ---
 
 ## 5.2. Clasificación de la Información
@@ -156,6 +157,35 @@ Los propietarios de información de cada área deberán clasificar sus activos c
 > **Situación crítica identificada:** los datos personales y bancarios de clientes —información de **criticidad alta**— se comparten actualmente por WhatsApp, Instagram y Facebook, canales no autorizados para Información Clasificada. Esta práctica deberá cesar y ser reemplazada por los sistemas corporativos (ERP, correo electrónico) con los controles de acceso definidos en este plan.
 
 Los propietarios de información revisarán la clasificación de sus activos **al menos una vez al año**, o ante cambios significativos en los procesos, sistemas o obligaciones legales aplicables.
+
+---
+
+
+## 5.3. Etiquetado y Manejo de la Información
+
+Una vez clasificada la información, se establecerán procedimientos de etiquetado y manejo acordes a cada nivel. Dada la situación actual de la organización —sin procesos formales de clasificación—, la implementación será gradual:
+
+- En una primera etapa, se priorizará el etiquetado y control de la información **Confidencial**, con énfasis en los datos de clientes y bancarios.
+- Los documentos digitales que contengan información Confidencial deberán identificarse claramente y transmitirse únicamente por canales seguros, evitando el uso de WhatsApp o redes sociales para este fin.
+- Se establecerán procedimientos para la **eliminación segura** de información Confidencial cuando ya no sea necesaria, tanto en soportes digitales como físicos.
+
+---
+
+## 5.4. Control de Activos de Hardware y Software
+
+### Hardware
+
+- Todos los equipos —corporativos y personales utilizados para trabajo— deberán estar registrados en el inventario de activos.
+- El **proceso de alta y baja de equipos**, actualmente inexistente, deberá formalizarse: ningún equipo deberá incorporarse o retirarse de la operación sin la aprobación de los dueños y el registro correspondiente.
+- Los equipos con **sistemas operativos obsoletos sin soporte** —situación que afecta a la mayoría del parque tecnológico actual— deberán ser reemplazados o actualizados como parte del plan de mejora, priorizando aquellos que procesan información Confidencial.
+- Los **dispositivos personales** utilizados para trabajo (2 laptops personales del personal administrativo) deberán sujetarse a controles mínimos de seguridad mientras permanezcan en uso, incluyendo protección antivirus y restricción de acceso a sistemas críticos.
+
+### Software
+
+- Se deberá elaborar un **inventario de software** instalado en todos los equipos, incluyendo versión, estado de licenciamiento y estado de actualización.
+- La **instalación libre de software** por parte de los usuarios, práctica actualmente habitual, deberá ser prohibida. Solo el proveedor externo de sistemas o los dueños podrán autorizar nuevas instalaciones.
+- Se implementará una política de **gestión de parches y actualizaciones** para los sistemas operativos y aplicaciones críticas, dado que actualmente no se gestionan regularmente.
+- El **control de licencias**, actualmente inexistente, deberá implementarse para evitar el uso de software sin licencia que genere riesgos legales y de seguridad.
 
 ---
 
