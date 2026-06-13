@@ -18,15 +18,16 @@ Además, deberán documentarse procedimientos para la gestión de incidentes de 
 
 ### Hardware
 
-* NAS para almacenamiento seguro de respaldos: Durante el relevamiento se detectó que la empresa no posee mecanismos formales de respaldo. Un NAS permite centralizar la información y almacenar copias de seguridad automáticas, reduciendo significativamente el riesgo de pérdida total de información ante fallas técnicas, errores humanos o ataques de ransomware.
+* NAS (Network Attached Storage (Almacenamiento Conectado a la Red)) para almacenamiento seguro de respaldos: Durante el relevamiento se detectó que la empresa no posee mecanismos formales de respaldo. Un NAS permite centralizar la información y almacenar copias de seguridad automáticas, reduciendo significativamente el riesgo de pérdida total de información ante fallas técnicas, errores humanos o ataques de ransomware.
 * Disco Externo USB para Backup Offline: Permite mantener copias de seguridad desconectadas de la red, disminuyendo el impacto de ataques de ransomware y cumpliendo con la estrategia de respaldo 3-2-1 recomendada para la protección de la información.
 * Equipamiento de red protegido.
 
 ### Software
 
 * Wazuh para monitoreo y correlación de eventos: Permite monitorear eventos de seguridad, detectar actividades sospechosas y generar alertas tempranas frente a posibles incidentes.
-* Herramientas de inventario de activos.
 * Soluciones de respaldo automatizado como ser Veeam Backup Community Edition el cual automatiza la realización de copias de seguridad y facilita la recuperación de información ante incidentes de seguridad o fallas operativas y Microsoft Defender for Business que brinda protección contra malware, ransomware y amenazas avanzadas, complementando las medidas de seguridad implementadas en los equipos de la organización.
+* Microsoft Defender for Business o ESET Protect: Permite proteger los equipos frente a malware, ransomware, spyware y otras amenazas que pueden ingresar mediante correos electrónicos, descargas maliciosas o dispositivos externos.
+* Microsoft Defender for Office 365 (opcional): Proporciona protección contra phishing, enlaces maliciosos y archivos adjuntos peligrosos recibidos por correo electrónico.
 
 ### Plan de Acción
 
@@ -118,7 +119,7 @@ Toda intervención realizada por terceros deberá quedar documentada.
 * VPN corporativa: Proporciona acceso remoto seguro mediante cifrado de las comunicaciones.
 * Microsoft Authenticator: Permite implementar autenticación multifactor (MFA), reduciendo el riesgo de robo o compromiso de credenciales.
 * Sistemas de auditoría de accesos como ser AnyDesk Empresarial:Facilita la asistencia remota de proveedores de forma controlada y auditable.
-* Herramientas de monitoreo.
+* Gateway de Correo Seguro como ser Proofpoint Essentials,Microsoft Defender for Office 365,SpamTitan que nos permite reducir el riesgo de ataques de phishing dirigidos a empleados o proveedores mediante el filtrado de correos maliciosos antes de que lleguen a los usuarios.
 
 ### Plan de Acción
 
@@ -203,6 +204,8 @@ La organización deberá formalizar procedimientos de incorporación, modificaci
 Asimismo, deberá implementar programas permanentes de concientización y capacitación en seguridad de la información.
 
 También se recomienda formalizar una política BYOD que regule el uso de dispositivos personales.
+
+Política BYOD (Bring Your Own Device): La organización permitirá el uso de dispositivos personales para actividades laborales únicamente cuando cumplan los requisitos mínimos de seguridad definidos por la empresa. Los dispositivos deberán contar con sistema operativo actualizado, antivirus activo, mecanismos de bloqueo de acceso y autenticación multifactor para acceder a recursos corporativos. El objetivo es reducir los riesgos de fuga de información, accesos no autorizados y compromisos de seguridad asociados al uso de dispositivos personales.
 
 ### Hardware
 
