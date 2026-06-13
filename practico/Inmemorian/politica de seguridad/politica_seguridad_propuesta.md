@@ -19,12 +19,24 @@ Además, deberán documentarse procedimientos para la gestión de incidentes de 
 ### Hardware
 
 * NAS (Network Attached Storage (Almacenamiento Conectado a la Red)) para almacenamiento seguro de respaldos: Durante el relevamiento se detectó que la empresa no posee mecanismos formales de respaldo. Un NAS permite centralizar la información y almacenar copias de seguridad automáticas, reduciendo significativamente el riesgo de pérdida total de información ante fallas técnicas, errores humanos o ataques de ransomware.
+Imagen:practico/Inmemorian/politica de seguridad/NAS.png
+Ventajas
+    ✔ Centralización de información.
+    ✔ Backups automáticos.
+    ✔ Recuperación ante incidentes.
+    ✔ Protección frente a ransomware.
 * Disco Externo USB para Backup Offline: Permite mantener copias de seguridad desconectadas de la red, disminuyendo el impacto de ataques de ransomware y cumpliendo con la estrategia de respaldo 3-2-1 recomendada para la protección de la información.
 * Equipamiento de red protegido.
 
 ### Software
 
 * Wazuh para monitoreo y correlación de eventos: Permite monitorear eventos de seguridad, detectar actividades sospechosas y generar alertas tempranas frente a posibles incidentes.
+Imagen: practico/Inmemorian/politica de seguridad/wazuh.png
+Ventajas
+✔ Detección temprana de incidentes.
+✔ Monitoreo centralizado.
+✔ Auditoría de accesos.
+✔ Cumplimiento de buenas prácticas ISO 27001.
 * Soluciones de respaldo automatizado como ser Veeam Backup Community Edition el cual automatiza la realización de copias de seguridad y facilita la recuperación de información ante incidentes de seguridad o fallas operativas y Microsoft Defender for Business que brinda protección contra malware, ransomware y amenazas avanzadas, complementando las medidas de seguridad implementadas en los equipos de la organización.
 * Microsoft Defender for Business o ESET Protect: Permite proteger los equipos frente a malware, ransomware, spyware y otras amenazas que pueden ingresar mediante correos electrónicos, descargas maliciosas o dispositivos externos.
 * Microsoft Defender for Office 365 (opcional): Proporciona protección contra phishing, enlaces maliciosos y archivos adjuntos peligrosos recibidos por correo electrónico.
@@ -112,12 +124,29 @@ Toda intervención realizada por terceros deberá quedar documentada.
 ### Hardware
 
 * Firewall perimetral: Permite controlar, registrar y filtrar los accesos externos realizados por proveedores o terceros, reduciendo el riesgo de accesos no autorizados.
+Imagen: practico/Inmemorian/politica de seguridad/Firewall Perimetral.png
+Ventajas
+    ✔ Bloquea accesos no autorizados.
+    ✔ Permite VPN segura.
+    ✔ Registra eventos de seguridad.
+    ✔ Filtra sitios maliciosos.
 * Equipamiento de comunicaciones seguro como ser UPS para Equipos de Red que nos garantiza la disponibilidad de los servicios de red y comunicaciones frente a cortes eléctricos o fluctuaciones de tensión.
+
 
 ### Software
 
 * VPN corporativa: Proporciona acceso remoto seguro mediante cifrado de las comunicaciones.
+Imagen: practico/Inmemorian/politica de seguridad/vpn_corporativa.png
+Ventajas
+    ✔ Comunicación cifrada.
+    ✔ Acceso remoto seguro.
+    ✔ Control de proveedores.
 * Microsoft Authenticator: Permite implementar autenticación multifactor (MFA), reduciendo el riesgo de robo o compromiso de credenciales.
+Imagen:practico/Inmemorian/politica de seguridad/MFA.png
+Ventajas
+    ✔ Reduce robo de credenciales.
+    ✔ Protege contra phishing.
+    ✔ Aumenta la seguridad de acceso.
 * Sistemas de auditoría de accesos como ser AnyDesk Empresarial:Facilita la asistencia remota de proveedores de forma controlada y auditable.
 * Gateway de Correo Seguro como ser Proofpoint Essentials,Microsoft Defender for Office 365,SpamTitan que nos permite reducir el riesgo de ataques de phishing dirigidos a empleados o proveedores mediante el filtrado de correos maliciosos antes de que lleguen a los usuarios.
 
@@ -164,9 +193,42 @@ Asimismo, cada activo deberá contar con un responsable designado que garantice 
 * Dispositivos de almacenamiento para respaldos.
 
 ### Software
-
+        Equipos Inmemorian
+                 │
+                 ▼
+         OCS Inventory
+      (Descubrimiento)
+                 │
+                 ▼
+              GLPI
+       (Administración)
+                 │
+ ┌───────────────┼───────────────┐
+ ▼               ▼               ▼
+Hardware      Software      Responsables
+ │                │                │
+ ▼                ▼                ▼
+PCs          Licencias      Responsables
+Servidores   Aplicaciones   Asignaciones
+Impresoras
+Ventajas
+                 │
+                 ▼
+          Reportes y Auditorías
 * GLPI: Permite gestionar inventarios de hardware, software y responsables asignados a cada activo.
+Ventajas
+    ✔ Inventario centralizado.
+    ✔ Control de responsables por activo.
+    ✔ Gestión de incidencias y tickets.
+    ✔ Seguimiento del ciclo de vida de los equipos.
+    ✔ Facilita auditorías de seguridad.
 * OCS Inventory: Automatiza el descubrimiento y actualización del inventario tecnológico de la organización.
+Ventajas
+    ✔ Descubrimiento automático de equipos.
+    ✔ Inventario de hardware y software.
+    ✔ Actualización automática de cambios.
+    ✔ Detección de software no autorizado.
+    ✔ Reducción del trabajo manual.
 * Herramientas de inventario automatizado.
 
 ### Plan de Acción
@@ -213,11 +275,48 @@ Política BYOD (Bring Your Own Device): La organización permitirá el uso de di
 * Tokens de autenticación para usuarios privilegiados (Llaves de Seguridad FIDO2 (YubiKey)):Proporcionan autenticación fuerte para usuarios con privilegios elevados y reducen el riesgo de robo de credenciales.
 
 ### Software
-
+                    Empleado
+                        │
+        ┌───────────────┼───────────────┐
+        ▼               ▼               ▼
+ Bitwarden         Antivirus        Capacitación
+   Teams           Corporativo      KnowBe4
+        │               │               │
+        └───────┬───────┴───────┬───────┘
+                ▼               ▼
+                Microsoft Intune
+            (Control de dispositivos)
+                        │
+                        ▼
+            Entorno de Trabajo Seguro
 * Gestores de contraseñas como ser Bitwarden Teams que nos facilita la gestión segura de contraseñas y evita prácticas inseguras como reutilización o almacenamiento en papel.
+Ventajas
+    ✔ Generación de contraseñas robustas.
+    ✔ Almacenamiento cifrado.
+    ✔ Compartición segura entre usuarios autorizados.
+    ✔ Reducción del riesgo de robo de credenciales.
+    ✔ Facilita la implementación de MFA.
 * Microsoft Intune: Permite administrar dispositivos corporativos y BYOD, aplicando políticas de seguridad centralizadas.
+Ventajas
+    ✔ Administración centralizada.
+    ✔ Aplicación de políticas de seguridad.
+    ✔ Control de dispositivos personales (BYOD).
+    ✔ Borrado remoto de información corporativa.
+    ✔ Verificación de cumplimiento de seguridad.
 * Antivirus corporativo.
+Ventajas
+    ✔ Protección en tiempo real.
+    ✔ Detección de ransomware.
+    ✔ Protección contra malware.
+    ✔ Análisis de archivos y correos.
+    ✔ Administración centralizada.
 * Plataformas de capacitación como ser KnowBe4 o GoPhish que facilitan la capacitación continua del personal y la realización de simulaciones de phishing para fortalecer la concientización.
+Ventajas
+    ✔ Reduce el riesgo de phishing.
+    ✔ Mejora la concientización.
+    ✔ Disminuye errores humanos.
+    ✔ Permite medir el nivel de seguridad del personal.
+    ✔ Fortalece la cultura organizacional de seguridad.
 
 ### Plan de Acción
 
