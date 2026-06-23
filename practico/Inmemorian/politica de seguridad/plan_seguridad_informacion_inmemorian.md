@@ -10,6 +10,10 @@
 4. [Seguridad Frente al Acceso por Parte de Terceros](#4-seguridad-frente-al-acceso-por-parte-de-terceros)
 5. [Clasificación y Control de Activos](#5-clasificación-y-control-de-activos)
 6. [Seguridad del Personal](#6-seguridad-del-personal)
+7. [Seguridad Física y Ambiental](#7-seguridad-física-y-ambiental)
+8. [Gestión de Comunicaciones y Operaciones](#8-gestión-de-comunicaciones-y-operaciones)
+9. [Control de Accesos](#9-control-de-accesos)
+10. [Desarrollo y Mantenimiento de Sistemas](#10-desarrollo-y-mantenimiento-de-sistemas)
 
 ---
 
@@ -706,5 +710,912 @@ Los dueños, en coordinación con el responsable formal de seguridad que se desi
 
 ---
 
+# 7. Seguridad Física y Ambiental
+
+La seguridad física y ambiental brinda el marco para minimizar los riesgos de daños e interferencias a la información y a las operaciones de Inmemorian. Asimismo, pretende evitar el riesgo de accesos físicos no autorizados mediante el establecimiento de perímetros de seguridad en cada una de sus locaciones.
+
+El relevamiento de la situación actual evidenció que la organización opera con **infraestructura informática distribuida en tres sedes** —Parque Industrial, Local Inmemorian y Local La Roca—, cada una con red ad-hoc y equipos accesibles al personal sin controles formales de acceso físico. En el Parque Industrial, el entorno productivo de tratamiento de piedras (polvo, humedad, vibraciones) representa un riesgo ambiental adicional para el equipamiento informático. En los locales comerciales, los **móviles corporativos** utilizados para atención a clientes vía WhatsApp e Instagram permanecen expuestos en mostradores y escritorios. Asimismo, **no existe un proceso definido para altas y bajas de equipos**, y se utilizan **2 computadoras portátiles personales** en modalidad híbrida sin controles sobre su resguardo físico.
+
+Adicionalmente, parte de la información operativa —pedidos, diseños de placas conmemorativas, datos de clientes— puede encontrarse en soporte físico o visible en pantallas de las estaciones de trabajo, lo que hace necesario establecer pautas de escritorios y pantallas limpias acordes al contexto de la organización.
+
+## Objetivo
+
+- Prevenir e impedir accesos no autorizados, daños e interferencias a las sedes, instalaciones e información de Inmemorian.
+- Proteger el equipamiento de procesamiento de información ubicándolo en áreas adecuadas y resguardadas, con medidas de seguridad y controles de acceso apropiados a cada locación.
+- Controlar los factores ambientales que podrían perjudicar el correcto funcionamiento del equipamiento informático que alberga la información de la organización.
+- Implementar medidas para proteger la información manejada por el personal en el marco de sus labores habituales, incluyendo el uso de dispositivos móviles y equipos personales.
+
+## Alcance
+
+Esta política se aplica a todos los recursos físicos relativos a los sistemas de información de Inmemorian en sus tres locaciones operativas:
+
+| Locación | Equipamiento informático | Características del entorno |
+|---|---|---|
+| **Parque Industrial** | 1 módem/router WiFi, 1 PC de producción, 2 PC de dueños | Entorno industrial: polvo de piedra, humedad, maquinaria. Área de producción y administración de dueños. |
+| **Local Inmemorian** | 1 módem/router WiFi, 1 PC de ventas, 1 móvil corporativo | Local comercial con atención al público. Acceso de clientes y visitantes. |
+| **Local La Roca** | 1 módem/router WiFi, 2 PC de ventas, 1 móvil corporativo | Local comercial con atención al público. Acceso de clientes y visitantes. |
+
+Comprende además: cableado de red y energía, routers WiFi, equipos personales utilizados para trabajo (2 laptops), medios de almacenamiento removibles, documentación en papel, y cualquier servidor o infraestructura administrada por el proveedor externo de sistemas cuya ubicación física deba ser relevada e incorporada al inventario de activos.
+
+## Responsabilidades
+
+Dado que Inmemorian **no cuenta con un responsable formal del área de sistemas ni con un área de Seguridad de la Información dedicada**, las funciones se distribuyen de la siguiente manera:
+
+### Dueños de la organización
+
+- Definir, junto con el proveedor externo de sistemas y los gerentes, las medidas de seguridad física y ambiental para el resguardo de los activos críticos, en función del análisis de riesgos.
+- Aprobar los niveles de acceso físico a las áreas donde se ubican los equipos de los dueños (Parque Industrial) y supervisar su cumplimiento.
+- Autorizar el retiro de equipamiento de las sedes para mantenimiento o desafectación.
+- Asumir provisionalmente la función de **responsable formal de seguridad de la información** hasta que se formalice la designación.
+
+### Proveedor externo de sistemas
+
+- Coordinar la implementación de las medidas de seguridad física y ambiental definidas para el equipamiento bajo su administración (servidores, infraestructura de red, sistemas ERP).
+- Controlar el mantenimiento del equipamiento informático y documentar las intervenciones realizadas.
+- Asesorar a los dueños y gerentes en la ubicación segura de equipos, protección eléctrica y resguardo de copias de seguridad una vez implementadas.
+
+### Gerentes de área
+
+Cada gerente (Ventas de Placas Conmemorativas y Profesionales, Ventas de Mesadas, Producción y Logística) definirá los niveles de acceso físico del personal de su área a las estaciones de trabajo, móviles corporativos y documentación bajo su responsabilidad.
+
+| Gerencia | Locación principal | Activos bajo su custodia física |
+|---|---|---|
+| Gerencia de Producción | Parque Industrial | PC de producción |
+| Gerencia de Ventas (Placas) | Local Inmemorian / Parque Industrial | PC de ventas, móvil corporativo |
+| Gerencia de Ventas (Mesadas) | Local La Roca | PC de ventas, móvil corporativo |
+| Gerencia de Logística | Parque Industrial | Equipos vinculados a logística |
+
+### Todo el personal
+
+Es responsable del cumplimiento de la política de **escritorios y pantallas limpias**, para la protección de la información relativa al trabajo diario en oficinas, locales comerciales y planta de producción.
+
+---
+
+## 7.1. Perímetro de Seguridad Física
+
+La protección física se llevará a cabo mediante barreras y medidas de control adecuadas al tamaño y operación de Inmemorian, en cada una de sus tres sedes.
+
+### Parque Industrial
+
+- El área donde se ubican las **2 PC de los dueños** y la **PC de producción** deberá delimitarse como zona de acceso restringido, separada del piso de producción cuando sea posible, para reducir la exposición a polvo, humedad y circulación no autorizada.
+- El **módem/router WiFi** deberá ubicarse en un lugar elevado y protegido, fuera del alcance directo de maquinaria y procesos de corte o pulido de piedras.
+- Se evaluará la instalación de cerradura o control de acceso en el espacio que alberga el equipamiento informático crítico.
+
+### Locales comerciales (Inmemorian y La Roca)
+
+- Las estaciones de trabajo de ventas deberán ubicarse en áreas del local no accesibles directamente al público, o con orientación de pantalla que impida la visualización de información de clientes por terceros.
+- Los **móviles corporativos** no deberán permanecer desatendidos en mostradores accesibles al público; se dispondrán en cajones con llave o bajo custodia del personal de turno al finalizar la jornada.
+
+### Infraestructura del proveedor externo
+
+- El proveedor externo de sistemas deberá documentar la ubicación física de servidores e infraestructura crítica (ERP, portales web) bajo su administración, y garantizar que dichas instalaciones cuenten con controles de acceso físico y ambientales acordes a la criticidad de la información que procesan.
+
+> **Situación actual:** no existe delimitación formal de perímetros de seguridad ni registro de la ubicación física de la infraestructura administrada por el proveedor externo. Su relevamiento e incorporación al inventario de activos constituye una acción prioritaria.
+
+---
+
+## 7.2. Controles de Acceso Físico
+
+Las áreas donde se ubica equipamiento de procesamiento de información deberán resguardarse mediante controles de acceso físico. Dada la escala de la organización (~8 empleados), los controles serán proporcionales pero documentados.
+
+Los controles de acceso físico tendrán, como mínimo, las siguientes características:
+
+- **Supervisión de visitantes:** en Parque Industrial y locales comerciales, todo visitante que requiera acceder a áreas donde haya equipamiento informático deberá ser acompañado por personal autorizado. Se registrará fecha, horario, nombre y motivo de la visita en un libro o registro digital.
+- **Acceso restringido a información clasificada:** el acceso a equipos que procesen Información Clasificada —especialmente datos personales y bancarios de clientes— quedará limitado exclusivamente a personas autorizadas por los dueños o el gerente del área. Se mantendrá un registro que permita auditar los accesos concedidos.
+- **Revisión periódica:** los gerentes de área, en coordinación con los dueños, revisarán **al menos una vez al año** los derechos de acceso físico a las estaciones de trabajo, móviles corporativos y documentación bajo su responsabilidad.
+
+### Controles específicos por locación
+
+| Locación | Control mínimo a implementar |
+|---|---|
+| Parque Industrial | Acceso a PC de producción y PC de dueños limitado al personal autorizado; bloqueo de sesión al ausentarse del puesto. |
+| Local Inmemorian | PC de ventas y móvil corporativo bajo custodia del personal de turno; pantalla orientada para evitar visualización por clientes. |
+| Local La Roca | Idem Local Inmemorian para las 2 PC de ventas y el móvil corporativo. |
+| Equipos personales (híbrido) | Las 2 laptops personales utilizadas para trabajo deberán contar con bloqueo por contraseña y no almacenarse en vehículos o espacios públicos sin protección. |
+
+---
+
+## 7.3. Ubicación y Protección del Equipamiento y Copias de Seguridad
+
+El equipamiento y las copias de seguridad serán ubicados y protegidos de manera que se reduzcan los riesgos ocasionados por amenazas ambientales, robos y accesos no autorizados.
+
+### Ubicación del equipamiento
+
+- Las estaciones de trabajo en el **Parque Industrial** deberán ubicarse alejadas de fuentes de polvo, líquidos y vibraciones intensas propias del procesamiento de mármol, granito y otras piedras. Se recomienda el uso de gabinetes cerrados o cubiertas protectoras para teclados y equipos.
+- Los **routers WiFi** de las tres locaciones deberán instalarse en posición elevada y fija, con acceso restringido al personal autorizado y al proveedor externo de sistemas.
+- Los **móviles corporativos** deberán contar con funda protectora, bloqueo por PIN o biometría, y política de no dejarlos conectados a cargadores públicos sin supervisión.
+
+### Protección de copias de seguridad
+
+> **Situación crítica identificada:** actualmente **no existen respaldos de ningún tipo** en la organización. Una vez implementado el sistema de respaldos previsto en el punto 8.3.1, las copias deberán almacenarse en:
+
+- Un medio **offline o fuera del sitio** (disco externo en caja fuerte o ubicación alternativa), separado de los equipos de producción.
+- Instalaciones con control de acceso físico, distintas de las áreas de mayor circulación de clientes o personal no autorizado.
+- Condiciones ambientales adecuadas: seco, temperatura controlada, protegido de polvo en el Parque Industrial.
+
+El proveedor externo de sistemas, en coordinación con los dueños y los propietarios de información de cada área, determinará la ubicación definitiva de las copias de resguardo conforme a la criticidad de los datos respaldados.
+
+---
+
+## 7.4. Suministros de Energía
+
+El equipamiento informático estará protegido frente a posibles fallas en el suministro de energía u otras anomalías eléctricas, dado que la organización considera que **todos los servicios son importantes para la continuidad operativa** y la dependencia de los sistemas informáticos es del **75 %**.
+
+### Medidas a implementar
+
+| Medida | Aplicación |
+|---|---|
+| **Estabilizadores o UPS** | PC de producción y PC de dueños en Parque Industrial; PC de ventas en cada local comercial. Prioridad en equipos que ejecutan los ERP. |
+| **Protección de routers** | Los 3 módem/router WiFi deberán contar al menos con estabilizador de tensión. |
+| **Procedimiento ante corte de energía** | El personal de cada locación deberá conocer el procedimiento: guardar trabajo en curso, apagar equipos de forma ordenada si el corte es prolongado, y reportar al proveedor externo de sistemas ante daños o reinicios inesperados. |
+| **Móviles corporativos** | Mantener batería suficiente durante la jornada laboral; no depender exclusivamente de cargadores en áreas públicas del local. |
+
+> **Situación actual:** no se relevó la existencia de UPS ni estabilizadores en ninguna locación. Su incorporación es una acción prioritaria, especialmente en el Parque Industrial donde las interrupciones podrían afectar la PC de producción vinculada al ERP.
+
+---
+
+## 7.5. Seguridad del Cableado
+
+El cableado de energía eléctrica y de comunicaciones que transporta datos o brinda apoyo a los servicios de información estará protegido contra intercepción, daño o desconexión accidental.
+
+Dado que cada locación opera con una **red ad-hoc independiente** (sin segmentación ni cableado estructurado formal), se establecen los siguientes lineamientos:
+
+- Los cables de red y alimentación de las estaciones de trabajo no deberán transitar por zonas de alto tránsito de clientes, maquinaria o manipulación de materiales en el Parque Industrial, donde puedan sufrir daño mecánico.
+- Las conexiones entre routers y equipos deberán ser fijas siempre que sea posible; se evitará el uso de extensiones eléctricas en mal estado o sobrecargadas.
+- Cualquier modificación del cableado deberá ser realizada o autorizada por el proveedor externo de sistemas, registrándose como cambio operativo conforme al punto 8.1.1.
+- En los locales comerciales, los cables no deberán quedar expuestos en mostradores donde clientes o visitantes puedan desconectarlos o acceder a los puertos del router.
+
+---
+
+## 7.6. Mantenimiento de Equipos
+
+Se realizará el mantenimiento del equipamiento para asegurar su disponibilidad e integridad permanentes, en un contexto donde **la mayoría de los equipos opera con sistemas operativos obsoletos sin soporte**.
+
+### Mantenimiento preventivo y correctivo
+
+- El **proveedor externo de sistemas** será responsable del mantenimiento de servidores, infraestructura de red, sistemas ERP y portales web bajo su administración.
+- Los gerentes de área serán responsables de reportar fallas en las estaciones de trabajo y móviles corporativos de su locación, canalizando la solicitud al proveedor externo de sistemas o a los dueños según corresponda.
+- Se establecerá un **calendario de mantenimiento preventivo** para los 6 equipos corporativos y los 2 móviles, con prioridad en aquellos que procesan información de criticidad alta.
+
+### Retiro de equipamiento para mantenimiento externo
+
+Cuando sea necesario retirar equipamiento de una sede de Inmemorian para su reparación o mantenimiento:
+
+1. Se registrará la salida del equipo (fecha, responsable, motivo, destino) en el inventario de activos.
+2. Se realizará previamente una **copia de resguardo** de la información contenida, una vez implementado el sistema de respaldos.
+3. Se eliminará o cifrará la información confidencial almacenada localmente en el equipo, especialmente datos de clientes y credenciales de acceso.
+4. Solo los **dueños** autorizarán el retiro de equipamiento corporativo; los equipos personales utilizados para trabajo deberán seguir el mismo procedimiento respecto de la información empresarial que contengan.
+
+> **Situación actual:** no existe proceso definido para altas y bajas de equipos ni registro de salidas para mantenimiento. Su formalización es una acción prioritaria vinculada al inventario de activos del punto 5.1.
+
+---
+
+## 7.7. Desafectación Segura de los Equipos
+
+La información puede verse comprometida por una desafectación o reutilización descuidada del equipamiento. En Inmemorian, donde los usuarios poseen **privilegios administrativos** en sus equipos y pueden **instalar software libremente**, el riesgo de residuos de información en discos desafectados es particularmente elevado.
+
+### Procedimiento de desafectación
+
+Antes de dar de baja, vender, donar o desechar cualquier equipo —corporativo o personal que haya almacenado información empresarial—:
+
+1. El gerente del área o los dueños autorizarán la baja en el inventario de activos.
+2. El **proveedor externo de sistemas** realizará la eliminación segura de los medios de almacenamiento:
+   - **Sobrescritura segura** de discos que vayan a reutilizarse.
+   - **Destrucción física** de discos o medios removibles que contengan Información Clasificada y no vayan a reutilizarse.
+3. No se utilizarán las funciones de borrado estándar del sistema operativo como único método para equipos que hayan procesado datos de clientes, información financiera o credenciales de los ERP.
+4. Se documentará el proceso de desafectación (equipo, fecha, método aplicado, responsable).
+
+### Medios removibles
+
+Los pen drives, discos externos u otros medios removibles utilizados para transferir información entre locaciones o hacia proveedores externos deberán ser inventariados y sometidos al mismo procedimiento de eliminación segura al dejar de utilizarse.
+
+---
+
+## 7.8. Políticas de Escritorios y Pantallas Limpias
+
+Se adoptará una política de **escritorios limpios** para proteger documentos en papel, dispositivos de almacenamiento removibles y móviles corporativos, y una política de **pantallas limpias** en todas las instalaciones de procesamiento de información, a fin de reducir los riesgos de acceso no autorizado, pérdida y daño de la información.
+
+Esta política es especialmente relevante en Inmemorian dado que:
+
+- Los **locales comerciales reciben clientes** que podrían visualizar información en pantallas o documentos dejados a la vista.
+- Los **móviles corporativos** contienen conversaciones de WhatsApp con datos de clientes, incluyendo en algunos casos **datos bancarios**.
+- No existen controles sobre dispositivos personales que podrían quedar desatendidos en modalidad híbrida.
+
+### Lineamientos obligatorios
+
+- Cuando corresponda, los documentos en papel (pedidos, diseños de placas, comprobantes) y los medios informáticos removibles deben almacenarse bajo llave, **especialmente fuera del horario de trabajo** y en locales comerciales al cierre.
+- La información sensible o confidencial, una vez impresa, debe retirarse de la impresora de inmediato.
+- **Bloquear la pantalla** (Windows + L) o cerrar las aplicaciones al alejarse del escritorio, en todas las locaciones. Esto es crítico en los locales de ventas con atención al público.
+- No dejar **pen drives** ni otros medios removibles conectados a los equipos.
+- Los **móviles corporativos** no deben dejarse desbloqueados sobre mostradores; activar bloqueo automático por inactividad.
+- Apagar el equipo al ausentarse por períodos prolongados, especialmente al cierre de los locales comerciales.
+- **No escribir contraseñas** en notas adhesivas ni guardarlas visibles en la oficina —práctica de riesgo elevado dado que las contraseñas actualmente no poseen vencimiento y varias cuentas son compartidas.
+- Borrar pizarras o superficies de escritura donde se hayan anotado datos de clientes, pedidos o credenciales.
+
+### Lineamientos adicionales para modalidad híbrida
+
+El personal administrativo que utilice las **2 laptops personales** para trabajo deberá:
+
+- No trabajar con información de clientes en espacios públicos (cafeterías, transporte) sin protección de pantalla.
+- No dejar la laptop desatendida en el vehículo o domicilio sin bloqueo de sesión.
+- Almacenar documentación impresa de la organización en lugar seguro, no mezclada con documentación personal.
+
+---
+
+# 8. Gestión de Comunicaciones y Operaciones
+
+Es conveniente establecer procedimientos que aseguren el funcionamiento correcto y seguro de las instalaciones de procesamiento de información y comunicaciones de Inmemorian, a fin de minimizar los riesgos de incidentes producidos por la manipulación indebida de información operativa.
+
+El relevamiento evidenció brechas críticas en este ámbito: **ausencia total de respaldos**, **inexistencia de firewall perimetral** en las tres locaciones, **ausencia de mecanismos de monitoreo y registros centralizados**, **sin filtros anti-spam ni anti-phishing** en el correo electrónico, **instalación libre de software** por parte de los usuarios, **sistemas sin actualizaciones regulares**, y **dependencia operativa del proveedor externo de sistemas** sin acuerdos formales de nivel de servicio. La organización no desarrolla software propio, por lo que la separación de ambientes de desarrollo y producción aplica principalmente a los sistemas administrados por el proveedor externo (ERP, portales web).
+
+## Objetivo
+
+- Garantizar el funcionamiento correcto y seguro de las instalaciones de procesamiento de información y comunicaciones en las tres locaciones de Inmemorian.
+- Establecer responsabilidades y procedimientos para su gestión y operación, incluyendo instrucciones operativas y segregación de funciones en la medida que la estructura organizacional lo permita.
+- Implementar controles operativos que mitiguen las brechas identificadas en el relevamiento, con prioridad en respaldos, protección contra software malicioso y gestión de cambios.
+
+## Alcance
+
+Todas las instalaciones de procesamiento y transmisión de información de Inmemorian:
+
+- **Infraestructura local:** 6 estaciones de trabajo, 2 laptops personales, 2 móviles corporativos, 3 routers WiFi en Parque Industrial, Local Inmemorian y Local La Roca.
+- **Sistemas críticos:** 2 ERP, portales web, correo electrónico (administrado por los dueños).
+- **Canales de comunicación:** WhatsApp, Instagram, Facebook utilizados operacionalmente por ventas, producción y logística.
+- **Servicios administrados por terceros:** servidores, red, usuarios, accesos y sistemas bajo administración del proveedor externo de sistemas; información financiera del proveedor externo de finanzas; datos de importaciones del proveedor externo de importaciones.
+
+## Responsabilidades
+
+### Dueños de la organización
+
+En su carácter de máxima autoridad y administradores del correo electrónico corporativo, tendrán a su cargo:
+
+- Establecer criterios de aprobación para nuevos sistemas de información en materia de seguridad.
+- Aprobar cambios e inversiones tecnológicas sobre la base de propuestas de las distintas áreas y del proveedor externo de sistemas.
+- Definir y documentar la norma de uso del correo electrónico e Internet.
+- Designar o asumir provisionalmente la función de **responsable formal de seguridad de la información**.
+- Verificar el cumplimiento de las normas, procedimientos y controles establecidos.
+- Evaluar, junto con el proveedor externo de sistemas, los contratos y acuerdos con terceros para garantizar la incorporación de consideraciones de seguridad de la información.
+
+### Proveedor externo de sistemas
+
+En su carácter de administrador de servidores, red, usuarios, accesos y los dos ERP, tendrá a su cargo:
+
+- Controlar la existencia de documentación actualizada relacionada con los procedimientos de comunicaciones y operaciones bajo su gestión.
+- Evaluar el posible impacto operativo de los cambios previstos a sistemas y equipamiento, y verificar su correcta implementación.
+- **Implementar y controlar las copias de resguardo** de información, así como la prueba periódica de su restauración —actualmente inexistentes y de máxima prioridad.
+- Asegurar el registro de las actividades realizadas en los sistemas bajo su administración.
+- Implementar los controles de seguridad definidos: protección contra software malicioso, firewall perimetral, detección de accesos no autorizados.
+- Definir e implementar procedimientos para la administración de medios informáticos de almacenamiento y su eliminación segura.
+- Participar en el tratamiento de incidentes de seguridad, de acuerdo con los procedimientos establecidos en el punto 6.2.
+
+### Gerentes de área
+
+Como propietarios de la información de su área:
+
+- Determinar, junto con el proveedor externo de sistemas y los dueños, los requerimientos de resguardo para el software y los datos bajo su gestión, en función de su criticidad (punto 5.2).
+- Reportar de inmediato incidentes o anomalías detectadas en los equipos y sistemas de su locación.
+- Velar por el cumplimiento de las normas de uso del correo electrónico, Internet y canales de comunicación en su equipo.
+
+### Todo el personal
+
+- Utilizar los sistemas y canales de comunicación conforme a las normas establecidas.
+- No instalar software sin autorización de los dueños o el proveedor externo de sistemas.
+- Reportar de inmediato cualquier comportamiento anómalo de los sistemas, sospecha de malware o correos fraudulentos.
+
+---
+
+## 8.1. Procedimientos y Responsabilidades Operativas
+
+### 8.1.1. Control de Cambios en las Operaciones
+
+Se definirán procedimientos para el control de los cambios en el ambiente operativo y de comunicaciones de Inmemorian. Actualmente, **las decisiones de cambios e inversiones tecnológicas son tomadas por los dueños** sobre la base de propuestas de las distintas áreas, sin un procedimiento formal documentado.
+
+Todo cambio en componentes operativos —instalación de software, modificación de red, actualización de ERP, cambios en portales web, incorporación de nuevos equipos— deberá:
+
+1. Ser **evaluado previamente** en aspectos técnicos y de seguridad por el proveedor externo de sistemas.
+2. Ser **aprobado por los dueños** antes de su implementación.
+3. Ser **comunicado al gerente del área** afectada.
+4. Quedar registrado en un **registro de cambios** con fecha, descripción, solicitante, aprobador, evaluación de impacto y resultado.
+
+Los cambios de mayor impacto —modificaciones en ERP, infraestructura de red, políticas de acceso, implementación de respaldos— requerirán evaluación explícita de su efecto sobre la seguridad de la información y la continuidad operativa.
+
+| Tipo de cambio | Ejemplo en Inmemorian | Aprobación requerida |
+|---|---|---|
+| Cambio de red | Instalación de firewall, segmentación VLAN | Dueños + proveedor externo de sistemas |
+| Cambio en ERP | Actualización de módulo, nueva integración | Dueños + gerente del área + proveedor externo |
+| Alta de equipo | Incorporación de nueva PC en Local La Roca | Dueños + gerente de área |
+| Cambio en portal web | Publicación de nuevo catálogo de mesadas | Dueños + gerencia de Ventas de Mesadas |
+| Instalación de software | Antivirus, gestor de contraseñas | Proveedor externo de sistemas + dueños |
+
+### 8.1.2. Procedimientos de Manejo de Incidentes
+
+Se establecerán funciones y procedimientos de manejo de incidentes que garanticen una respuesta rápida, eficaz y sistemática a los incidentes relativos a seguridad de la información.
+
+> **Situación actual:** no existe una definición formal de responsabilidades ante incidentes ni un procedimiento documentado para la comunicación interna. Las decisiones son tomadas por el dueño junto con los gerentes de forma ad-hoc.
+
+El procedimiento detallado de reporte y escalamiento se encuentra definido en el **punto 6.2** del presente plan. En el ámbito de comunicaciones y operaciones, se complementa con las siguientes disposiciones:
+
+- Ante un incidente que afecte sistemas, red, ERP o portales web, el **proveedor externo de sistemas** deberá ser contactado de inmediato por los dueños o el gerente que reciba el reporte.
+- El proveedor documentará las acciones técnicas de contención y resolución, y las compartirá con los dueños para el registro centralizado de incidentes.
+- Los incidentes que involucren **pérdida de datos** —especialmente crítico dado que no existen respaldos— o **filtración de datos de clientes** deberán tratarse con máxima prioridad, evaluando las obligaciones de la Ley N.º 25.326.
+
+### 8.1.3. Separación entre Instalaciones de Desarrollo e Instalaciones Operativas
+
+Inmemorian **no desarrolla software propio** ni cuenta con personal de desarrollo interno. Los sistemas críticos (2 ERP, portales web) son administrados por el proveedor externo de sistemas.
+
+En este contexto:
+
+- Los ambientes de **desarrollo, prueba y producción** de los ERP y portales web deberán estar separados en la infraestructura administrada por el proveedor externo de sistemas.
+- El proveedor externo de sistemas deberá documentar las reglas para la transferencia de configuraciones o actualizaciones desde ambientes de prueba hacia producción.
+- Ningún cambio en sistemas productivos deberá aplicarse sin haber sido probado previamente en un ambiente no productivo, salvo emergencia documentada y aprobada por los dueños.
+- El personal de Inmemorian **no deberá realizar pruebas, instalaciones o modificaciones** en los ERP o portales web sin autorización y supervisión del proveedor externo de sistemas.
+
+---
+
+## 8.2. Protección Contra Software Malicioso
+
+Los dueños, con el asesoramiento del responsable formal de seguridad de la información que se designe, definirán los controles de detección y prevención para la protección contra software malicioso. El **proveedor externo de sistemas** implementará dichos controles en servidores, red y estaciones de trabajo.
+
+> **Situación actual:** no se relevó con certeza qué antivirus o soluciones de seguridad están instaladas en cada equipo. No existen filtros anti-spam ni anti-phishing. Los usuarios pueden instalar software libremente. Los sistemas no se actualizan regularmente.
+
+### Controles a implementar
+
+| Control | Responsable | Prioridad |
+|---|---|---|
+| **Antivirus corporativo** en las 6 estaciones de trabajo, 2 laptops y servidores | Proveedor externo de sistemas | Alta |
+| **Actualización automática** de firmas de antivirus y parches de seguridad del sistema operativo Windows | Proveedor externo de sistemas | Alta |
+| **Filtros anti-spam y anti-phishing** en el correo electrónico administrado por los dueños | Dueños + proveedor externo de sistemas | Alta |
+| **Firewall perimetral (NGFW)** en cada una de las 3 locaciones | Proveedor externo de sistemas | Alta |
+| **Restricción de instalación de software** por parte de usuarios | Dueños + gerentes de área | Media |
+| **Capacitación** en identificación de phishing, archivos sospechosos y enlaces maliciosos | Gerentes de área (punto 6.1) | Alta |
+
+El proveedor externo de sistemas deberá verificar periódicamente el estado de las protecciones implementadas y reportar a los dueños cualquier equipo sin antivirus activo, sin actualizaciones o con software no autorizado instalado.
+
+---
+
+## 8.3. Mantenimiento
+
+### 8.3.1. Resguardo de la Información
+
+El proveedor externo de sistemas, junto con los dueños y los **propietarios de información** (gerentes de área), determinarán los requerimientos para resguardar cada software o dato en función de su criticidad, conforme a la clasificación del punto 5.2.
+
+> **Situación crítica identificada:** actualmente **no existen respaldos de ningún tipo**, **no se realizan copias de seguridad**, **no hay copias offline o inmutables**, y **nunca se probaron restauraciones**. Esta es la brecha operativa de mayor severidad identificada en el relevamiento.
+
+#### Requerimientos de resguardo por criticidad
+
+| Criticidad | Información / Sistema | Frecuencia mínima de respaldo | Retención |
+|---|---|---|---|
+| **Alta** | Datos personales y bancarios de clientes (ERP), registros contables (finanzas) | Diaria | 90 días mínimo; 1 copia offline mensual |
+| **Alta** | Configuración y datos de los 2 ERP | Diaria | 90 días mínimo |
+| **Media** | Pedidos, diseños de placas, portales web | Diaria o semanal según volumen | 60 días |
+| **Media** | Datos de importaciones y proveedores | Semanal | 60 días |
+| **Baja** | Material de marketing en redes sociales | Según necesidad | 30 días |
+
+#### Implementación
+
+- El **proveedor externo de sistemas** dispondrá y controlará la realización de las copias de resguardo, aplicando la estrategia **3-2-1** (tres copias, dos medios, una copia offline o fuera del sitio), conforme al plan técnico del capítulo de medidas técnicas.
+- Se realizarán **pruebas de restauración** al menos **trimestralmente**, documentando fecha, alcance de la prueba, resultado y tiempo de recuperación.
+- Los dueños serán informados del estado de los respaldos en un reporte mensual hasta que el sistema se encuentre estabilizado.
+
+### 8.3.2. Registro de Actividades del Personal Operativo
+
+El proveedor externo de sistemas asegurará el registro de las actividades relevantes realizadas en los sistemas bajo su administración (servidores, ERP, portales web, red).
+
+> **Situación actual:** no poseen mecanismos de monitoreo ni registros centralizados.
+
+#### Registros mínimos a implementar
+
+- Accesos y acciones administrativas en servidores y ERP.
+- Cambios de configuración en routers y firewall, una vez implementados.
+- Ejecución y resultado de respaldos.
+- Intentos de acceso fallidos a sistemas críticos.
+- Instalación o desinstalación de software en estaciones de trabajo, una vez restringida la instalación libre.
+
+Los registros deberán conservarse por un período mínimo de **6 meses** y estar protegidos contra modificación no autorizada. El acceso a los registros quedará limitado a los dueños y al proveedor externo de sistemas.
+
+---
+
+## 8.4. Administración y Seguridad de los Medios de Almacenamiento
+
+### 8.4.1. Administración de Medios Informáticos Removibles
+
+El proveedor externo de sistemas, con la asistencia de los dueños, implementará procedimientos para la administración y auditoría de medios informáticos removibles (pen drives, discos externos, tarjetas de memoria).
+
+Dado que la organización opera con **tres locaciones independientes** y coordina operaciones mediante ERP y WhatsApp, es probable el uso de medios removibles para transferir archivos —especialmente diseños de placas e imágenes conmemorativas— entre sedes.
+
+#### Lineamientos
+
+- Todo medio removible utilizado para almacenar información de Inmemorian deberá registrarse en el inventario de activos.
+- Los medios que contengan Información Clasificada deberán estar cifrados.
+- Se prohibirá el uso de medios removibles personales no registrados para almacenar información de clientes o datos de los ERP.
+- Los gerentes de área verificarán periódicamente que no existan pen drives conectados permanentemente a las estaciones de trabajo, conforme a la política de escritorios limpios (punto 7.8).
+
+### 8.4.2. Eliminación de Medios de Información
+
+El proveedor externo de sistemas, junto con los dueños, definirá procedimientos para la eliminación segura de los medios de información, respetando la normativa vigente —incluyendo la Ley N.º 25.326 en lo relativo a datos personales de clientes.
+
+El procedimiento se coordinará con el punto 7.7 (Desafectación Segura de los Equipos) y contemplará:
+
+- Eliminación segura de medios removibles al finalizar su vida útil.
+- Borrado certificado de información de clientes cuando los medios dejen de ser necesarios.
+- Registro de cada operación de eliminación (medio, fecha, método, responsable).
+
+---
+
+## 8.5. Intercambios de Información y Software
+
+### 8.5.1. Seguridad del Correo Electrónico
+
+La administración del correo electrónico corporativo está actualmente a cargo de los **dueños**. Se definirán controles y normas claras para su uso seguro.
+
+#### Controles a implementar
+
+- **Filtros anti-spam y anti-phishing**, actualmente inexistentes, como medida prioritaria.
+- Restricción del envío de Información Clasificada —especialmente datos personales y bancarios de clientes— sin cifrado o por canales no autorizados.
+- Prohibición de reenviar correos con datos de clientes a cuentas personales o a WhatsApp.
+- Uso de contraseñas individuales con vencimiento periódico para las cuentas de correo corporativo.
+- Implementación de **MFA** en las cuentas de correo de los dueños y gerentes, como primer paso hacia la autenticación multifactor en sistemas críticos.
+
+#### Normas de uso del correo electrónico
+
+| Permitido | Prohibido |
+|---|---|
+| Comunicación laboral con clientes, proveedores y entre áreas | Compartir credenciales de acceso al correo |
+| Envío de pedidos y documentación comercial por canales autorizados | Enviar datos bancarios de clientes sin protección adecuada |
+| Reportar incidentes de seguridad a los dueños | Abrir archivos adjuntos de remitentes desconocidos sin verificar |
+| Uso de firma corporativa en comunicaciones oficiales | Utilizar el correo corporativo para fines personales no autorizados |
+
+### 8.5.2. Sistemas de Acceso Público
+
+Inmemorian mantiene **portales web** utilizados por las gerencias de ventas para la comercialización de placas conmemorativas, placas profesionales, placas para monumentos y mesadas. Asimismo, utiliza **Instagram, Facebook y WhatsApp** como canales de comunicación y comercialización con acceso público.
+
+Se tomarán recaudos para la protección de la integridad de la información publicada electrónicamente, a fin de prevenir la modificación no autorizada que podría dañar la reputación de la organización.
+
+#### Proceso de autorización para publicación
+
+1. Todo contenido destinado a portales web o redes sociales deberá ser revisado y aprobado por el **gerente del área** correspondiente antes de su publicación.
+2. Los dueños autorizarán contenido institucional, cambios en portales web y publicaciones que involucren información sensible.
+3. **No se publicarán** datos personales de clientes, datos bancarios, información financiera interna ni credenciales de acceso en ningún canal público.
+4. El proveedor externo de sistemas garantizará los controles de acceso administrativo sobre los portales web, de modo que solo personal autorizado pueda modificar el contenido publicado.
+5. Ante sospecha de modificación no autorizada de un portal web o perfil de red social, se activará el procedimiento de incidentes (puntos 6.2 y 8.1.2).
+
+#### Controles sobre canales de comunicación operativa
+
+Dado el uso intensivo de **WhatsApp** para coordinar ventas, producción y logística:
+
+- Se establecerán lineamientos sobre qué información puede compartirse por WhatsApp (información de criticidad baja o media sin datos personales sensibles) y qué información debe circular exclusivamente por ERP o correo electrónico (datos personales, datos bancarios —criticidad alta).
+- Los **móviles corporativos** deberán tener bloqueo de pantalla, copia de seguridad periódica de conversaciones comerciales relevantes cuando sea técnicamente viable, y procedimiento de borrado seguro al cambio de titular del equipo.
+- Las cuentas de Instagram y Facebook utilizadas comercialmente deberán tener contraseñas robustas, acceso limitado al personal autorizado y revisión periódica de permisos de publicación.
+
+---
+
+# 9. Control de Accesos
+
+El acceso por medio de un sistema de restricciones y excepciones a la información es la base de todo sistema de seguridad de la información. Para impedir el acceso no autorizado a los sistemas de información de Inmemorian se deben implementar procedimientos formales para controlar la asignación de derechos de acceso a los sistemas, bases de datos y servicios de información (2 ERP, portales web, correo electrónico, redes sociales comerciales), los cuales deben estar claramente documentados, comunicados y controlados en cuanto a su cumplimiento.
+
+El relevamiento de la situación actual evidenció brechas severas en esta materia: existen **credenciales compartidas** —especialmente en Producción y Ventas, debido a cambios de turno y rotación de personal—, **no se utiliza autenticación multifactor (MFA)**, las contraseñas **no poseen vencimiento**, los usuarios tienen **privilegios administrativos en sus equipos**, **no existen controles sobre la navegación web** y **no hay registros de acceso ni monitoreo centralizado**. Asimismo, la administración de usuarios y accesos está a cargo del **proveedor externo de sistemas**, mientras que la **autorización de permisos especiales recae en los dueños**, sin un procedimiento formal documentado entre ambos.
+
+Los procedimientos que se definan deberán comprender todas las etapas del ciclo de vida de los accesos de los usuarios, desde el registro inicial de nuevos usuarios hasta la privación final de derechos de aquellos que ya no requieren acceso —situación particularmente relevante dada la rotación de personal en los locales comerciales.
+
+La cooperación de los usuarios es esencial para la eficacia de la seguridad. Por lo tanto, es necesario concientizar a los aproximadamente 8 empleados de la organización acerca de sus responsabilidades en el mantenimiento de controles de acceso eficaces, en particular las relacionadas con el uso de contraseñas individuales y la seguridad del equipamiento.
+
+## Objetivo
+
+- Impedir el acceso no autorizado a los sistemas de información, bases de datos y servicios de información de Inmemorian (ERP, portales web, correo electrónico, redes sociales comerciales).
+- Eliminar progresivamente el uso de cuentas compartidas, implementando identificadores únicos por usuario.
+- Implementar seguridad en los accesos mediante técnicas de autenticación y autorización, incorporando MFA en los sistemas críticos.
+- Controlar la seguridad en la conexión entre las redes de las tres locaciones e Internet.
+- Registrar y revisar eventos y actividades críticas llevadas a cabo por los usuarios en los sistemas.
+- Concientizar a los usuarios respecto de su responsabilidad frente a la utilización de contraseñas y equipos.
+- Garantizar la seguridad de la información cuando se utilizan los móviles corporativos y las laptops personales en modalidad híbrida.
+
+## Alcance
+
+Esta política se aplica a todas las formas de acceso de aquellos a quienes se les haya otorgado permisos sobre los sistemas de información, bases de datos o servicios de información de Inmemorian, cualquiera sea la función que desempeñen:
+
+- Los **8 empleados** de la organización, incluyendo el personal administrativo en modalidad híbrida.
+- Los **dueños** y los **gerentes de área** (Ventas de Placas Conmemorativas y Profesionales, Ventas de Mesadas, Producción y Logística).
+- El **personal tercerizado**: proveedores externos de Sistemas, Finanzas e Importaciones, en la medida en que acceden a sistemas o información de la organización.
+
+Comprende los accesos a: los 2 ERP, los portales web, el correo electrónico corporativo, las cuentas comerciales de WhatsApp, Instagram y Facebook, las 6 estaciones de trabajo, las 2 laptops personales utilizadas para trabajo, los 2 móviles corporativos y los 3 routers WiFi de las locaciones Parque Industrial, Local Inmemorian y Local La Roca.
+
+Asimismo, se aplica al proveedor externo de sistemas en su carácter de administrador de servidores, usuarios, accesos y conexiones de red.
+
+## Responsabilidades
+
+Dado que Inmemorian **no cuenta con un responsable formal del área de sistemas ni con un área de Seguridad de la Información dedicada**, las funciones se distribuyen de la siguiente manera:
+
+### Dueños de la organización
+
+En su carácter de autoridad que **autoriza permisos y accesos especiales**, tendrán a su cargo:
+
+- Aprobar formalmente toda alta, modificación y baja de accesos a los sistemas críticos (ERP, portales web, correo electrónico).
+- Definir, junto con el proveedor externo de sistemas, las normas y procedimientos para la gestión de accesos.
+- Definir las pautas de utilización de Internet para todos los usuarios.
+- Aprobar la asignación de privilegios administrativos, que deberán quedar limitados a los casos estrictamente necesarios.
+- Verificar el cumplimiento de las pautas establecidas y concientizar a los usuarios sobre el uso apropiado de contraseñas y equipos.
+- Asumir provisionalmente la función de **responsable formal de seguridad de la información** hasta que se formalice la designación.
+
+### Proveedor externo de sistemas
+
+En su carácter de administrador de servidores, usuarios y accesos:
+
+- Implementar los métodos de autenticación y control de acceso definidos en los sistemas, bases de datos y servicios.
+- Ejecutar las altas, modificaciones y bajas de usuarios **únicamente ante el pedido formal aprobado por los dueños**, conservando registro de cada solicitud.
+- Implementar procedimientos para la activación y desactivación de derechos de acceso a las redes.
+- Realizar una adecuada subdivisión de la red en cada locación e implementar el control de puertos y servicios.
+- Definir e implementar los registros de eventos y actividades correspondientes a sistemas operativos y plataformas bajo su administración.
+- Analizar e implementar, junto con los dueños, las medidas de control de acceso a Internet.
+- Efectuar el control de los registros de auditoría generados por los sistemas, una vez implementados.
+
+### Gerentes de área (propietarios de la información)
+
+- Evaluar los riesgos a los cuales se expone la información de su área a fin de determinar los controles de acceso, autenticación y utilización a implementar en cada caso.
+- Solicitar a los dueños la asignación o revocación de accesos para el personal a su cargo, informando de inmediato las desvinculaciones y cambios de funciones.
+- Definir los eventos y actividades de usuarios a registrar en los sistemas de su incumbencia y la periodicidad de revisión.
+- Llevar a cabo, junto con los dueños, un proceso formal y periódico —al menos **semestral**— de revisión de los derechos de acceso a la información de su área.
+
+### Todo el personal
+
+- Mantener en secreto sus credenciales individuales y no compartirlas bajo ninguna circunstancia, incluso ante cambios de turno.
+- Cumplir las pautas de uso de contraseñas, Internet y equipos definidas en esta política.
+
+---
+
+## 9.1. Requerimientos para el Control de Acceso
+
+### 9.1.1. Política de Control de Accesos
+
+En la aplicación de controles de acceso se contemplarán los siguientes aspectos:
+
+- Identificar los requerimientos de seguridad de cada una de las aplicaciones utilizadas: los 2 ERP, los portales web, el correo electrónico y las cuentas comerciales de redes sociales.
+- Identificar toda la información relacionada con dichas aplicaciones, con especial atención a los **datos personales y bancarios de clientes** sujetos a obligaciones legales de protección (Ley N.º 25.326).
+- Considerar la criticidad definida en la clasificación de activos (punto 5.2): las áreas de **Sistemas y Finanzas/Administración** manejan la información más sensible, y **todas las áreas excepto Producción** acceden a información crítica.
+
+### 9.1.2. Reglas de Control de Acceso
+
+Las reglas de control de acceso especificadas deberán:
+
+- Indicar expresamente si las reglas son obligatorias u optativas.
+- Establecerse sobre la premisa **"Todo debe estar prohibido a menos que se permita expresamente"**, en reemplazo de la situación actual donde los usuarios poseen privilegios administrativos y libertad de instalación de software.
+- Controlar y registrar los cambios en los permisos de usuario, los cuales requerirán siempre aprobación de los dueños.
+
+#### Matriz de acceso de referencia
+
+| Rol | ERP | Portales web (administración) | Correo corporativo | Redes sociales comerciales | Datos bancarios de clientes |
+|---|---|---|---|---|---|
+| Dueños | Acceso total | Autorizan cambios | Administradores | Autorizan | Sí |
+| Gerencias de Ventas | Módulos de ventas | Carga de contenido aprobado | Sí | Sí (cuentas de su área) | Limitado a su operación |
+| Gerencia de Producción | Módulos de producción | No | No | No | No |
+| Gerencia de Logística | Módulos de logística | No | Sí | No | No |
+| Proveedor externo de sistemas | Administración técnica | Administración técnica | Soporte técnico | No | Solo con autorización expresa |
+| Proveedores de Finanzas / Importaciones | Módulos de su incumbencia | No | Según necesidad | No | Según función, con autorización |
+
+---
+
+## 9.2. Administración de Accesos de Usuarios
+
+Con el objetivo de impedir el acceso no autorizado a la información, se implementarán procedimientos formales para controlar la asignación de derechos de acceso a los sistemas, datos y servicios de información.
+
+### 9.2.1. Registración de Usuarios
+
+Los dueños, junto con el proveedor externo de sistemas, definirán un procedimiento formal de registro de usuarios para otorgar y revocar el acceso a todos los sistemas, bases de datos y servicios de información, el cual debe comprender:
+
+- **Utilizar identificadores de usuario únicos** para cada uno de los 8 empleados, en cada sistema.
+- **Eliminar progresivamente las cuentas compartidas** existentes en Producción y Ventas. El uso de identificadores grupales solo se permitirá cuando sea imprescindible por razones operativas documentadas (por ejemplo, la cuenta de atención de un local comercial), debiendo en tal caso registrarse qué persona la utilizó en cada turno.
+- Verificar que el usuario tiene autorización del gerente de área (propietario de la información) y de los dueños para el uso del sistema, base de datos o servicio.
+- Verificar que el nivel de acceso otorgado es adecuado para la función del usuario, conforme a la matriz de acceso del punto 9.1.2.
+- Requerir que los usuarios firmen declaraciones señalando que comprenden y aceptan las condiciones de acceso.
+- **Cancelar inmediatamente los derechos de acceso** de los usuarios que cambiaron de tareas, fueron desvinculados o cuya autorización fue revocada. Dada la rotación de personal en los locales, el gerente del área deberá comunicar la novedad a los dueños y al proveedor externo de sistemas **el mismo día** en que se produzca.
+- Efectuar revisiones **semestrales** con el objeto de:
+  - Cancelar identificadores y cuentas de usuario redundantes.
+  - Inhabilitar y/o eliminar cuentas inactivas por un período mayor a 60 días.
+  - Detectar y regularizar cuentas compartidas no autorizadas.
+
+> **Situación actual:** existen credenciales individuales pero muchas son compartidas, principalmente en Producción y Ventas debido a cambios de turno y rotación de personal. La regularización de estas cuentas constituye una acción prioritaria, ya que impide atribuir las acciones realizadas en los sistemas a una persona determinada.
+
+### 9.2.2. Administración de Contraseñas de Usuario
+
+La asignación de contraseñas se controlará a través de un proceso de administración formal, mediante el cual deben respetarse los siguientes pasos:
+
+- Requerir que los usuarios firmen una declaración por la cual se comprometen a mantener sus contraseñas personales en secreto.
+- Garantizar que los usuarios cambien las contraseñas iniciales asignadas en el primer inicio de sesión.
+- Almacenar las contraseñas solo en sistemas informáticos protegidos. Se evaluará la adopción de un **gestor de contraseñas corporativo** para reemplazar prácticas inseguras como anotarlas en papel (prohibidas por la política de escritorios limpios, punto 7.8).
+- Configurar los sistemas de manera que permitan únicamente la utilización de **contraseñas robustas**: longitud mínima de 12 caracteres, combinación de mayúsculas, minúsculas, números y símbolos, y no reutilización de contraseñas anteriores.
+- Establecer **vencimiento periódico** de contraseñas en los sistemas críticos —actualmente las contraseñas no poseen vencimiento— o, alternativamente, vencimiento ante cualquier indicio de compromiso, conforme a las buenas prácticas vigentes.
+- Implementar **autenticación multifactor (MFA)**, comenzando por: cuentas de correo de dueños y gerentes, accesos administrativos a los ERP y portales web, y cuentas comerciales de redes sociales.
+
+### 9.2.3. Administración de Contraseñas Críticas
+
+Los dueños, junto con el proveedor externo de sistemas, definirán los procedimientos para la administración de las contraseñas críticas de la organización, entre ellas:
+
+- Credenciales de administración de los 2 ERP y de los portales web.
+- Credenciales de administración de los 3 routers WiFi (que deberán modificarse respecto de las de fábrica).
+- Contraseña de administración del correo electrónico corporativo, hoy gestionada por los dueños.
+- Credenciales de las cuentas comerciales de Instagram, Facebook y WhatsApp Business.
+
+Estas contraseñas deberán resguardarse en sobre cerrado o gestor de contraseñas con acceso restringido a los dueños, de modo que la organización no dependa exclusivamente del proveedor externo para acceder a sus propios sistemas.
+
+---
+
+## 9.3. Responsabilidades del Usuario
+
+### 9.3.1. Uso de Contraseñas
+
+Los usuarios deben seguir buenas prácticas de seguridad en la selección y uso de contraseñas. Las contraseñas constituyen el principal medio de validación y autenticación de la identidad de un usuario en Inmemorian —actualmente el único, hasta tanto se implemente MFA— y, consecuentemente, un medio para establecer derechos de acceso a los sistemas.
+
+Los usuarios deben cumplir las siguientes directivas:
+
+- **Mantener las contraseñas en secreto.** No compartirlas con compañeros de turno, gerentes ni proveedores externos: si otra persona necesita acceso, debe solicitarse una cuenta propia.
+- Cambiar la contraseña siempre que exista un posible indicio de compromiso del sistema, informando además a los dueños.
+- Seleccionar contraseñas de calidad que:
+  - Sean fáciles de recordar para el usuario.
+  - No estén basadas en datos que otra persona pueda adivinar u obtener fácilmente (nombres de familiares, nombre de la empresa, fechas, "inmemorian2026", etc.).
+  - Sean distintas para cada sistema: el ERP, el correo y las redes sociales no deben compartir la misma contraseña.
+- Cambiar las contraseñas cada vez que el sistema lo solicite.
+- No anotar contraseñas en papeles, notas adhesivas ni archivos sin protección, conforme a la política de escritorios y pantallas limpias (punto 7.8).
+
+---
+
+## 9.4. Control de Acceso a la Red
+
+### 9.4.1. Política de Utilización de los Servicios de Red
+
+Las conexiones no seguras a los servicios de red pueden afectar a toda la organización. Por lo tanto, se controlará el acceso a los servicios de red tanto internos como externos en las tres locaciones.
+
+Los dueños, con la implementación técnica a cargo del proveedor externo de sistemas, tendrán a su cargo el otorgamiento del acceso a los servicios y recursos de red, únicamente de acuerdo con el pedido formal correspondiente.
+
+Lineamientos específicos para Inmemorian:
+
+- Las contraseñas de las redes WiFi de las tres locaciones deberán ser robustas, cambiarse periódicamente y ante cada desvinculación de personal.
+- No se compartirá la contraseña de la red WiFi operativa con clientes o visitantes; de requerirse WiFi para terceros, se habilitará una **red de invitados separada**.
+- La administración de los routers quedará restringida al proveedor externo de sistemas, con credenciales de administración distintas de las de fábrica.
+
+### 9.4.2. Subdivisión de Redes
+
+Para controlar la seguridad en redes, estas deberán dividirse en dominios lógicos separados, definiendo y documentando los perímetros de seguridad convenientes.
+
+> **Situación actual:** cada locación opera con una red ad-hoc independiente sin segmentación interna ni firewall perimetral. Los equipos de dueños, producción y ventas comparten la misma red que cualquier dispositivo que se conecte al WiFi.
+
+En la medida de las posibilidades técnicas de la infraestructura de cada locación, el proveedor externo de sistemas implementará:
+
+| Locación | Segmentación mínima propuesta |
+|---|---|
+| Parque Industrial | Separación entre la red de PC de dueños (información crítica), la PC de producción y la red de invitados. |
+| Local Inmemorian | Separación entre la red operativa (PC de ventas, móvil corporativo) y la red de invitados para clientes. |
+| Local La Roca | Idem Local Inmemorian, contemplando las 2 PC de ventas. |
+
+Esta subdivisión se coordinará con la incorporación del **firewall perimetral** prevista en el punto 8.2.
+
+### 9.4.3. Acceso a Internet
+
+El acceso a Internet será utilizado con propósitos autorizados o con el destino por el cual fue provisto. Se reconoce que las gerencias de ventas utilizan legítimamente **Instagram, Facebook, WhatsApp y portales web** como herramientas comerciales, por lo que el control de navegación deberá contemplar estas necesidades operativas.
+
+Para todos los usuarios está prohibido el acceso a contenidos considerados inapropiados al propósito del negocio. A tal fin se considerarán inapropiados:
+
+- Páginas de descargas de software no autorizado (riesgo agravado porque los usuarios hoy pueden instalar software libremente).
+- Páginas de hacking.
+- Páginas de juegos.
+- Páginas con contenido de violencia, discriminación, odio racial, étnico o religioso.
+- Páginas con contenido obsceno y/o pornográfico.
+
+Adicionalmente, se implementará un **registro de los accesos de los usuarios a Internet**, con el objeto de realizar revisiones de los accesos efectuados o analizar casos particulares. Dicho control deberá ser **comunicado a los usuarios** antes de su puesta en marcha.
+
+> **Situación actual:** no existen controles sobre la navegación web ni registros de acceso. Los dueños, junto con el proveedor externo de sistemas, analizarán las medidas a implementar (filtrado DNS, funciones del firewall perimetral) para efectivizar dicho control.
+
+### 9.4.4. Seguridad de los Servicios de Red
+
+Los dueños, junto con el proveedor externo de sistemas, definirán las pautas para garantizar la seguridad de los servicios de red de la organización, tanto públicos (portales web) como privados (ERP, red interna de cada locación).
+
+Para ello se tendrán en cuenta las siguientes directivas:
+
+- Mantener instalados y habilitados solo aquellos servicios que sean utilizados, deshabilitando en los routers funciones innecesarias (administración remota desde Internet, WPS, UPnP cuando no se requiera).
+- Controlar el acceso lógico a los servicios, tanto a su uso como a su administración.
+- Configurar cada servicio de manera segura, evitando las vulnerabilidades que pudieran presentar.
+- **Instalar periódicamente las actualizaciones de seguridad** —los sistemas hoy no se actualizan regularmente—, incluyendo el firmware de los 3 routers WiFi.
+
+---
+
+## 9.5. Control de Acceso al Sistema Operativo
+
+### 9.5.1. Procedimientos de Conexión de Equipos de Usuario
+
+El acceso a los servicios de información solo será posible a través de un proceso de conexión seguro, diseñado para minimizar la oportunidad de acceso no autorizado.
+
+En las 6 estaciones de trabajo (Windows), las 2 laptops personales utilizadas para trabajo y los 2 móviles corporativos:
+
+- Todo equipo deberá requerir autenticación (contraseña, PIN o biometría) para iniciar sesión.
+- Se configurará el **bloqueo automático de sesión por inactividad**, especialmente crítico en las PC de ventas de los locales con atención al público.
+- El procedimiento de conexión divulgará la mínima información posible acerca del sistema, evitando mensajes que faciliten el accionar de un usuario no autorizado.
+- Se priorizará la **regularización de los sistemas operativos obsoletos**: la mayoría de los equipos se encuentra sin soporte, lo que compromete la eficacia de cualquier control de acceso. Su actualización o reemplazo se gestionará conforme al procedimiento de control de cambios (punto 8.1.1).
+
+### 9.5.2. Identificación y Autenticación de los Usuarios
+
+Todos los usuarios tendrán un **identificador único (ID de usuario)** para su uso personal exclusivo, tanto en el sistema operativo de su equipo como en los ERP y demás sistemas, de manera que las actividades puedan rastrearse con posterioridad. Los identificadores de usuario no darán ningún indicio del nivel de privilegio otorgado.
+
+En circunstancias excepcionales, cuando exista un claro beneficio para la organización —por ejemplo, la cuenta operativa de atención de un local comercial—, podrá utilizarse un identificador compartido para un grupo de usuarios o una tarea específica. En tales casos se documentará la justificación, la aprobación de los dueños y el registro de qué persona utilizó la cuenta en cada turno.
+
+Asimismo, los **privilegios administrativos sobre los equipos** —que hoy poseen todos los usuarios— quedarán restringidos al proveedor externo de sistemas y a los dueños. Los usuarios operarán con cuentas estándar sin capacidad de instalar software, conforme al punto 8.2.
+
+### 9.5.3. Limitación del Horario de Conexión
+
+La limitación del período durante el cual se permiten las conexiones a los servicios informáticos reduce el espectro de oportunidades para el acceso no autorizado.
+
+Dado que la operación de Inmemorian se desarrolla en horarios comerciales y productivos definidos, se evaluará junto con el proveedor externo de sistemas la restricción de inicio de sesión en los ERP y estaciones de trabajo fuera del horario laboral habitual de cada locación, contemplando excepciones autorizadas para los dueños y el personal administrativo en modalidad híbrida.
+
+---
+
+## 9.6. Monitoreo del Acceso y Uso de los Sistemas
+
+### 9.6.1. Registro de Eventos
+
+Se generarán registros de auditoría que contengan excepciones y otros eventos relativos a la seguridad.
+
+> **Situación actual:** la organización no posee mecanismos de monitoreo ni registros centralizados, lo que impide detectar accesos no autorizados o reconstruir lo ocurrido ante un incidente. La implementación de registros es una acción prioritaria a cargo del proveedor externo de sistemas, conforme al punto 8.3.2.
+
+Los registros de auditoría deberán incluir, como mínimo:
+
+- Identificación del usuario.
+- Fecha y hora de inicio y terminación de la sesión.
+- Registros de intentos exitosos y fallidos de acceso al sistema.
+- Registros de intentos exitosos y fallidos de acceso a datos y otros recursos, con prioridad en los módulos de los ERP que contienen **datos personales y bancarios de clientes**.
+
+Los registros se conservarán por un período mínimo de **6 meses**, protegidos contra modificación, con acceso limitado a los dueños y al proveedor externo de sistemas. Los gerentes de área definirán, junto con los dueños, la periodicidad de revisión de los registros correspondientes a los sistemas de su incumbencia.
+
+---
+
+## 9.7. Computación Móvil y Trabajo Remoto
+
+### 9.7.1. Computación Móvil y Trabajo Remoto
+
+Cuando se utilicen dispositivos informáticos móviles propiedad de Inmemorian —los **2 móviles corporativos** de los locales— y/o equipos personales validados o autorizados para el trabajo —las **2 laptops personales** del personal administrativo en modalidad híbrida—, se deberá tener especial cuidado en garantizar que no se comprometa la información de la organización. Cada usuario garantizará que ningún tercero acceda a los dispositivos bajo su responsabilidad.
+
+> **Situación actual:** no existen controles sobre los dispositivos personales utilizados para trabajar, la organización no utiliza VPN y no hay conexiones remotas formales a los sistemas. El trabajo híbrido del personal administrativo se realiza sin lineamientos de seguridad definidos.
+
+Se desarrollarán procedimientos adecuados para estos dispositivos, que abarquen los siguientes conceptos:
+
+- **Protección física:** los móviles corporativos no permanecerán desatendidos en mostradores; las laptops no se dejarán en vehículos o espacios públicos sin custodia (en coordinación con los puntos 7.2 y 7.8).
+- **Acceso seguro a los dispositivos:** bloqueo por contraseña, PIN o biometría en todos los casos, con bloqueo automático por inactividad.
+- **Utilización en lugares públicos:** prohibición de trabajar con datos de clientes en redes WiFi públicas sin protección; evitar la visualización de información por terceros.
+- **Acceso a los sistemas de la organización:** si en el futuro se habilita acceso remoto a los ERP o a otros sistemas internos, este deberá realizarse exclusivamente mediante **VPN u otro canal cifrado** definido por el proveedor externo de sistemas, con MFA. Hasta entonces, queda prohibido exponer los sistemas internos directamente a Internet.
+- **Técnicas criptográficas:** cifrado del almacenamiento de las laptops que contengan información de la organización, y de los medios removibles utilizados para transportar información entre locaciones (punto 8.4.1).
+- **Resguardo de la información:** la información de la organización contenida en estos dispositivos —incluyendo conversaciones comerciales de WhatsApp en los móviles corporativos— se incorporará al esquema de respaldos del punto 8.3.1.
+- **Protección contra software malicioso:** antivirus activo y actualizado también en las laptops personales utilizadas para el trabajo, como condición para su autorización.
+
+---
+
+# 10. Desarrollo y Mantenimiento de Sistemas
+
+El desarrollo y mantenimiento de las aplicaciones es un punto crítico de la seguridad. Durante el análisis y diseño de los procesos que soportan las aplicaciones se deben identificar, documentar y aprobar los requerimientos de seguridad a incorporar durante las etapas de desarrollo e implementación.
+
+**Inmemorian no desarrolla software propio ni cuenta con personal de desarrollo interno.** Sus sistemas críticos —los 2 ERP y los portales web— son productos desarrollados y mantenidos por terceros, administrados por el **proveedor externo de sistemas**. En consecuencia, esta política se orienta principalmente a: (a) exigir y verificar requerimientos de seguridad frente a los proveedores que desarrollan y mantienen los sistemas; (b) controlar los cambios, actualizaciones y datos de prueba de dichos sistemas; y (c) asegurar una adecuada administración de la infraestructura de base (sistemas operativos Windows y software de base) sobre la que operan.
+
+Asimismo, es necesaria una adecuada administración de la infraestructura de base en las distintas plataformas para asegurar una correcta implementación de la seguridad, situación hoy comprometida por la existencia de **equipos con sistemas operativos obsoletos y sin gestión de actualizaciones**.
+
+## Objetivo
+
+- Asegurar la inclusión de controles de seguridad en los sistemas de información utilizados por Inmemorian, aun cuando su desarrollo y mantenimiento estén tercerizados.
+- Definir y documentar las normas y procedimientos de seguridad que se aplicarán durante el ciclo de vida de los aplicativos (ERP, portales web) y en la infraestructura de base en la cual se apoyan.
+- Establecer las exigencias contractuales y de control hacia los proveedores externos que desarrollan, mantienen o administran software para la organización.
+
+## Alcance
+
+Esta política se aplica a todos los sistemas informáticos utilizados por Inmemorian —en su totalidad desarrollos de terceros—, y a todos los sistemas operativos y/o software de base que integren cualquiera de los ambientes en donde residan dichos sistemas:
+
+- Los **2 ERP** que soportan ventas, compras, producción, logística y finanzas.
+- Los **portales web** utilizados para la comercialización de placas y mesadas.
+- El **correo electrónico** corporativo y los servicios asociados.
+- Los **sistemas operativos Windows** de las 6 estaciones de trabajo y las 2 laptops, y el software de base de los servidores administrados por el proveedor externo de sistemas.
+- Cualquier desarrollo o personalización futura que se contrate a terceros (por ejemplo, modificaciones a los portales web o integraciones del ERP).
+
+## Responsabilidades
+
+**Los dueños**, junto con los **gerentes de área** (propietarios de la información) y el **proveedor externo de sistemas**, definirán los controles a ser implementados en los sistemas provistos por terceros.
+
+**Los dueños**, en su rol provisional de responsables de seguridad de la información, verificarán el cumplimiento de los requerimientos de seguridad establecidos para el mantenimiento de los sistemas, pudiendo requerir al proveedor externo de sistemas la evidencia correspondiente.
+
+**El proveedor externo de sistemas** cumplirá, respecto de los sistemas bajo su administración, las funciones de **"Implementador"** y **"Administrador de programas fuentes"** descriptas en este capítulo, en la medida en que resulten aplicables. Deberá documentar quién, dentro de su organización, ejerce cada función, y verificará el cumplimiento de las definiciones establecidas sobre los controles y medidas de seguridad incorporadas a los sistemas.
+
+---
+
+## 10.1. Análisis y Especificaciones de los Requerimientos de Seguridad
+
+Esta política se implementa para incorporar seguridad a los sistemas de información utilizados por Inmemorian (todos de terceros) y a las mejoras o actualizaciones que se les incorporen.
+
+Para ello, se definirá un procedimiento de modo de incorporar los requerimientos de seguridad durante la **evaluación, contratación y actualización** de sistemas:
+
+- Antes de contratar o actualizar un sistema (ERP, portal web, herramienta complementaria), los dueños —con asesoramiento del proveedor externo de sistemas— evaluarán los requerimientos de seguridad: control de accesos por usuario individual, registro de auditoría, protección de datos personales de clientes, mecanismos de respaldo y soporte vigente del fabricante.
+- Toda incorporación de sistemas seguirá el procedimiento de control de cambios del punto 8.1.1.
+- Se priorizarán productos que permitan **MFA, perfiles de acceso diferenciados y registros de auditoría**, en línea con los objetivos del punto 9 y con la expectativa de la dirección de avanzar hacia una futura **certificación ISO 27001**.
+
+## 10.2. Controles Criptográficos
+
+Cuando sea necesario, se utilizarán sistemas y técnicas criptográficas para la protección de la información, con el fin de asegurar una adecuada protección de su confidencialidad e integridad. En el contexto de Inmemorian, se aplicarán como mínimo a:
+
+- Los **datos personales y bancarios de clientes** almacenados o transmitidos por los ERP y el correo electrónico.
+- Los **portales web**, que deberán operar exclusivamente sobre HTTPS con certificados vigentes, responsabilidad del proveedor externo de sistemas.
+- Los **respaldos** de información crítica y los **medios removibles** que la transporten (puntos 8.3.1 y 8.4.1).
+- El almacenamiento de las **laptops personales** autorizadas para trabajo híbrido (punto 9.7.1).
+
+## 10.3. Seguridad de los Archivos del Sistema
+
+Se garantizará que las actividades de soporte y mantenimiento de los sistemas se lleven a cabo de manera segura, controlando el acceso a los archivos de estos.
+
+### 10.3.1. Control del Software Operativo
+
+Se definen los siguientes controles a realizar durante la implementación y actualización del software en producción, a fin de minimizar el riesgo de alteración de los sistemas:
+
+- El personal de Inmemorian **no accederá a los ambientes de administración técnica** de los ERP ni de los portales web; dicha administración corresponde exclusivamente al proveedor externo de sistemas.
+- El proveedor externo de sistemas, en su función de **"Implementador"**, tendrá como responsabilidades principales:
+  - Coordinar la implementación de modificaciones, actualizaciones o nuevos módulos en el ambiente de producción de los ERP y portales web.
+  - Asegurar que los sistemas en uso en producción sean los autorizados y aprobados de acuerdo con el procedimiento de control de cambios (punto 8.1.1).
+  - Instalar las modificaciones controlando previamente que hayan sido probadas y aprobadas por el gerente del área afectada (usuario final) y comunicadas a los dueños.
+- Solo se instalará **software original y licenciado**: el relevamiento evidenció que no existe control de licenciamiento, situación que deberá regularizarse mediante un inventario de software y licencias a cargo del proveedor externo de sistemas.
+
+### 10.3.2. Protección de los Datos de Prueba del Sistema
+
+Cuando el proveedor externo de sistemas o cualquier tercero requiera realizar pruebas sobre los sistemas de Inmemorian, se establecerán normas y procedimientos que contemplen lo siguiente:
+
+- **Prohibir el uso de bases de datos operativas** para pruebas. En caso de resultar imprescindible, los datos deberán **despersonalizarse** previamente, en particular los datos personales y bancarios de clientes protegidos por la Ley N.º 25.326.
+- Solicitar **autorización formal de los dueños** para realizar una copia de la base operativa como base de prueba, llevando registro de tal autorización.
+- **Eliminar inmediatamente**, una vez completadas las pruebas, la información operativa utilizada, dejando constancia de dicha eliminación.
+
+### 10.3.3. Control de Cambios a Datos Operativos
+
+La modificación, actualización o eliminación de los datos operativos serán realizadas a través de los sistemas que procesan dichos datos (los ERP) y de acuerdo con el esquema de control de accesos implementado en los mismos. Una modificación por fuera de los sistemas —por ejemplo, directamente sobre la base de datos por parte del proveedor externo— podría poner en riesgo la integridad de la información.
+
+Los casos en los que no fuera posible la aplicación de la precedente política se considerarán **excepciones**, para las cuales se contemplará lo siguiente:
+
+- Se generará una **solicitud formal** para la realización de la modificación, actualización o eliminación del dato, dirigida a los dueños.
+- El **gerente del área afectada** (propietario de la información) y los **dueños** aprobarán la ejecución del cambio, evaluando las razones por las cuales se solicita.
+- El proveedor externo de sistemas documentará la operación realizada (dato afectado, fecha, motivo, autorización) y, una vez implementado el esquema de respaldos, verificará la existencia de una copia previa al cambio.
+
+### 10.3.4. Control de Acceso a Programas Fuentes
+
+Inmemorian no posee programas fuentes propios. No obstante, para reducir la probabilidad de alteración de los sistemas que utiliza:
+
+- El proveedor externo de sistemas, en su función de **"Administrador de programas fuentes"**, mantendrá la custodia y el control de versiones de cualquier código o personalización desarrollada para Inmemorian (por ejemplo, los portales web o adaptaciones de los ERP), manteniendo en todo momento la correlación entre versiones fuente y versiones en producción.
+- Se prohibirá el acceso de todo operador y/o usuario de Inmemorian a los ambientes y herramientas que permitan la generación y/o manipulación de los programas fuentes.
+- En los contratos con los proveedores se procurará establecer el derecho de Inmemorian a acceder a los fuentes o a un **acuerdo de custodia (escrow)** ante la discontinuidad del proveedor, conforme al punto 10.4.3.
+
+## 10.4. Seguridad de los Procesos de Desarrollo y Soporte
+
+Esta política provee seguridad al software y a la información de los sistemas de aplicación; por lo tanto, se controlarán los entornos y el soporte dado a los mismos.
+
+### 10.4.1. Procedimiento de Control de Cambios
+
+A fin de minimizar los riesgos de alteración de los sistemas de información, se implementarán controles durante la implementación de cambios, imponiendo el cumplimiento de procedimientos formales que garanticen la seguridad y el control, respetando la división de funciones en la medida en que la escala de la organización lo permita.
+
+El procedimiento —coordinado con el punto 8.1.1— incluirá las siguientes consideraciones:
+
+- Identificar todos los elementos que requieren modificaciones (software, bases de datos, hardware, configuración de red).
+- Obtener **aprobación formal de los dueños** antes de que comiencen las tareas, sobre la base de la propuesta técnica del proveedor externo de sistemas.
+- Verificar que el cambio no viole los requerimientos de seguridad definidos en la presente política.
+- Efectuar las actividades relativas al cambio en un **ambiente de prueba** previo a producción (punto 8.1.3).
+- Actualizar la documentación para cada cambio implementado, tanto los instructivos de usuario como la documentación operativa del proveedor.
+- Mantener un **control de versiones** para todas las actualizaciones de software.
+- Garantizar que la implementación se lleve a cabo minimizando la discontinuidad de las actividades —relevante dado que la dependencia operativa de los sistemas es del 75 % y la organización considera que todos sus servicios son importantes para la continuidad.
+- Garantizar que sea el proveedor externo de sistemas, en su función de **"Implementador"**, quien efectúe el pasaje de los objetos modificados al ambiente operativo.
+
+### 10.4.2. Revisión Técnica de los Cambios en el Sistema Operativo
+
+Toda vez que sea necesario realizar un cambio en el sistema operativo —incluyendo la **actualización o reemplazo de los equipos Windows obsoletos**, acción prioritaria identificada en el relevamiento—, los sistemas serán revisados para asegurar que no se produzca un impacto en su funcionamiento o seguridad.
+
+En particular, antes de actualizar el sistema operativo de las estaciones de trabajo, el proveedor externo de sistemas verificará la compatibilidad de los clientes de los ERP y demás software operativo, realizará el respaldo previo correspondiente (una vez implementado el esquema del punto 8.3.1) y documentará el resultado de la actualización.
+
+### 10.4.3. Desarrollo Externo de Software
+
+Dado que **todo el software utilizado por Inmemorian es de desarrollo externo**, y que existe dependencia operativa de los proveedores externos de Sistemas, Finanzas e Importaciones, se establecerán normas y procedimientos para toda contratación de desarrollo, personalización o mantenimiento de software, que contemplen los siguientes puntos:
+
+- **Acuerdos de licencias, propiedad de código y derechos conferidos**, especialmente respecto de los portales web y cualquier personalización de los ERP.
+- **Acuerdos de confidencialidad** con todos los proveedores que accedan a información de la organización, en particular a datos personales y bancarios de clientes.
+- Definición del **acceso del proveedor a los entornos de desarrollo, prueba y producción**, limitado a lo estrictamente necesario y, en lo posible, con cuentas nominales y registro de actividad (punto 9.6.1).
+- **Requerimientos contractuales con respecto a la calidad del código** y la existencia de garantías sobre el trabajo entregado.
+- **Procedimientos de certificación de la calidad y precisión** del trabajo llevado a cabo por el proveedor, incluyendo la aprobación funcional por parte del gerente del área usuaria.
+- **Acuerdos de custodia de los programas fuentes** (y cualquier otra información requerida) en caso de quiebra o discontinuidad del proveedor, de modo de no comprometer la continuidad operativa de la organización.
+- Niveles de servicio (SLA) y compromisos de respuesta ante incidentes, hoy inexistentes con el proveedor externo de sistemas, cuya formalización constituye una acción prioritaria vinculada al punto 4 (Seguridad Frente al Acceso por Parte de Terceros).
+
+---
+
 *Documento elaborado en el marco del Plan de Seguridad de la Información de Inmemorian.*
-*Versión unificada — Puntos 1 a 6.*
+*Versión unificada — Puntos 1 a 10.*
