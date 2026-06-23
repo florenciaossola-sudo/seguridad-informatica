@@ -1,6 +1,6 @@
 # Medidas de Implementación y Plan de Acción
 
-## 1 Seguridad de la Información
+## 2 Seguridad de la Información
 
 ### Medidas Técnicas
 
@@ -62,7 +62,7 @@ Ventajas
 
 ---
 
-## 2 Política de Seguridad de la Información
+## 3 Política de Seguridad de la Información
 
 ### Medidas Técnicas
 
@@ -105,7 +105,7 @@ No se requiere equipamiento específico para la implementación de esta polític
 
 ---
 
-## 3 Seguridad Frente al Acceso por Parte de Terceros
+## 4 Seguridad Frente al Acceso por Parte de Terceros
 
 ### Medidas Técnicas
 
@@ -168,7 +168,7 @@ Ventajas
 
 ---
 
-## 4 Clasificación y Control de Activos
+## 5 Clasificación y Control de Activos
 
 ### Medidas Técnicas
 
@@ -249,7 +249,7 @@ Ventajas
 
 ---
 
-## 5 Seguridad del Personal
+## 6 Seguridad del Personal
 
 ### Medidas Técnicas
 
@@ -335,3 +335,392 @@ Ventajas
 
 * Realizar campañas periódicas de concientización.
 * Ejecutar simulaciones de phishing.
+
+
+# 7. Seguridad Física y Ambiental
+
+## Medidas Técnicas
+
+La Seguridad Física y Ambiental tiene como objetivo proteger los activos tecnológicos y la información de Inmemorian frente a accesos físicos no autorizados, daños ambientales, robos y pérdidas de información.
+
+Durante el relevamiento se identificó que la organización opera en tres sedes distintas, con equipos accesibles al personal y visitantes, ausencia de controles formales de acceso físico, utilización de dispositivos móviles corporativos, notebooks personales para tareas laborales y exposición de equipamiento a riesgos ambientales en el Parque Industrial.
+
+Por ello se recomienda implementar controles físicos, protección ambiental y medidas de resguardo para documentación, dispositivos y equipamiento tecnológico.
+
+## Procedimientos
+
+- Control de acceso físico a áreas críticas.
+- Registro de visitantes y proveedores.
+- Procedimiento de mantenimiento y retiro de equipos.
+- Procedimiento de baja segura de activos.
+- Política de escritorios y pantallas limpias.
+
+## Hardware
+
+### UPS APC Easy UPS: 
+Es una fuente de alimentación ininterrumpida (UPS - Uninterruptible Power Supply) fabricada por la marca APC.
+Su función principal es mantener encendidos los equipos durante cortes de energía y protegerlos frente a problemas eléctricos.
+
+Imagen: 
+Red Eléctrica
+      │
+      ▼
+    UPS
+      │
+      ▼
+PC / Router / Servidor
+
+Ventajas
+    ✔ Protección frente a cortes eléctricos.
+    ✔ Prevención de pérdida de información.
+    ✔ Mayor disponibilidad operativa.
+    ✔ Protección del equipamiento.
+
+### Armarios con Llave
+Ventajas
+    ✔ Protección de documentación sensible.
+    ✔ Control de acceso físico.
+    ✔ Reducción de pérdidas o robos.
+
+### Gabinetes de Protección Industrial
+Ventajas
+    ✔ Protección contra polvo.
+    ✔ Protección contra humedad.
+    ✔ Mayor vida útil del equipamiento.
+
+## Software
+
+### BitLocker
+BitLocker es una herramienta de cifrado de disco completo incluida en las versiones profesionales y empresariales de Windows que permite proteger la información almacenada en una computadora mediante criptografía.
+Su objetivo es evitar que una persona pueda acceder a los datos de un equipo si este es robado, perdido o si alguien intenta extraer el disco para leerlo desde otro dispositivo.
+Ventajas
+    ✔ Cifrado de discos.
+    ✔ Protección ante robo de equipos.
+    ✔ Integración nativa con Windows.
+
+### Microsoft Intune
+Ventajas
+    ✔ Administración de dispositivos.
+    ✔ Control de equipos remotos.
+    ✔ Gestión de dispositivos móviles.
+
+## Plan de Acción
+### Corto Plazo
+- Implementar política de escritorios limpios.
+- Resguardar móviles corporativos.
+- Inventariar equipamiento.
+
+### Mediano Plazo
+- Incorporar UPS.
+- Instalar armarios de seguridad.
+- Definir áreas restringidas.
+
+### Largo Plazo
+- Auditorías físicas periódicas.
+- Evaluación anual de riesgos ambientales.
+
+---
+# 8. Gestión de Comunicaciones y Operaciones
+
+## Medidas Técnicas
+Durante el relevamiento se detectó ausencia de respaldos, inexistencia de firewall perimetral, falta de monitoreo centralizado, ausencia de controles anti-phishing y dependencia significativa del proveedor externo.
+
+Por ello se recomienda implementar controles operativos que garanticen la disponibilidad, integridad y trazabilidad de la información.
+
+## Procedimientos
+- Gestión de cambios.
+- Gestión de respaldos.
+- Gestión de incidentes.
+- Gestión de actualizaciones.
+- Gestión de software autorizado.
+
+## Hardware
+### Synology NAS DS923+
+Synology NAS DS923+ es un dispositivo de almacenamiento en red (NAS - Network Attached Storage) diseñado para centralizar archivos, realizar copias de seguridad automáticas y compartir información de forma segura dentro de una organización.
+
+Imagen: practico/Inmemorian/politica de seguridad/NAS.png
+
+Ventajas
+    ✔ Centralización de respaldos.
+    ✔ Recuperación ante incidentes.
+    ✔ Automatización de copias.
+    ✔ Protección frente a ransomware.
+
+### FortiGate 40F
+El FortiGate 40F es un firewall de próxima generación (NGFW - Next Generation Firewall) fabricado por Fortinet, diseñado para proteger redes pequeñas y medianas empresas frente a amenazas externas e internas.
+A diferencia de un router tradicional, un firewall analiza el tráfico de red y decide qué conexiones están permitidas y cuáles deben bloquearse.
+Imagen: 
+Internet
+    │
+    ▼
+FortiGate 40F
+    │
+ ┌──┼──┐
+ │  │  │
+PCs ERP WiFi
+Ventajas
+    ✔ Filtrado de tráfico.
+    ✔ VPN segura.
+    ✔ Protección perimetral.
+    ✔ Control de navegación.
+
+### Disco Externo USB Offline
+Ventajas
+    ✔ Estrategia 3-2-1.
+    ✔ Respaldo fuera de línea.
+    ✔ Protección ante ransomware.
+
+## Software
+
+### Wazuh
+Imagen: practico/Inmemorian/politica de seguridad/wazuh.png
+
+Ventajas
+    ✔ Monitoreo centralizado.
+    ✔ Correlación de eventos.
+    ✔ Auditoría de accesos.
+    ✔ Detección temprana.
+
+### Veeam Backup Community Edition
+Veeam Backup Community Edition es una solución gratuita de respaldo y recuperación desarrollada por Veeam Software que permite realizar copias de seguridad automáticas de computadoras, servidores y máquinas virtuales.
+Ventajas
+    ✔ Backups automáticos.
+    ✔ Restauración rápida.
+    ✔ Recuperación ante desastres.
+
+### Microsoft Defender for Business
+Microsoft Defender for Business es una solución de protección avanzada de endpoints (Endpoint Detection and Response - EDR) desarrollada por Microsoft Defender for Business y orientada específicamente a pequeñas y medianas empresas.
+Su función principal es proteger computadoras y servidores frente a:Malware,Ransomware,Virus,Phishing,Ataques de credenciales,Amenazas avanzadas.
+No es simplemente un antivirus tradicional; incorpora capacidades de detección, análisis y respuesta ante incidentes.
+Ventajas
+    ✔ Protección contra malware.
+    ✔ Protección contra ransomware.
+    ✔ Administración centralizada.
+
+## Plan de Acción
+
+### Corto Plazo
+- Implementar backups.
+- Formalizar gestión de cambios.
+
+### Mediano Plazo
+- Implementar firewall.
+- Implementar monitoreo.
+
+### Largo Plazo
+- Auditorías operativas periódicas.
+- Mejora continua de controles.
+
+---
+
+# 9. Control de Accesos
+
+## Medidas Técnicas
+
+Durante el relevamiento se detectó la existencia de cuentas compartidas, ausencia de MFA, usuarios con privilegios administrativos y falta de registros de auditoría.
+Estas condiciones incrementan significativamente el riesgo de accesos no autorizados y dificultan la trazabilidad de acciones sobre los sistemas.
+
+## Procedimientos
+
+- Alta de usuarios.
+- Baja de usuarios.
+- Modificación de permisos.
+- Revisión semestral de accesos.
+- Gestión de contraseñas.
+
+## Hardware
+
+### Firewall FortiGate
+Ventajas
+    ✔ Segmentación.
+    ✔ Control de accesos.
+    ✔ Registros de eventos.
+
+## Software
+
+### Microsoft Authenticator
+Imagen: practico/Inmemorian/politica de seguridad/MFA.png
+
+Ventajas
+    ✔ MFA.
+    ✔ Protección contra phishing.
+    ✔ Reducción del robo de credenciales.
+
+### Bitwarden Enterprise
+Bitwarden Enterprise es una solución de gestión segura de contraseñas (Password Manager) que permite almacenar, compartir y administrar credenciales corporativas de forma centralizada y cifrada.
+Ventajas
+    ✔ Gestión centralizada de contraseñas.
+    ✔ Eliminación de contraseñas compartidas.
+    ✔ Auditoría.
+
+### Wazuh
+Ventajas
+    ✔ Registro de accesos.
+    ✔ Detección de comportamientos anómalos.
+
+## Plan de Acción
+### Corto Plazo
+- Eliminar cuentas compartidas.
+- Definir política de contraseñas.
+
+### Mediano Plazo
+- Implementar MFA.
+- Revisar privilegios.
+
+### Largo Plazo
+- Automatizar auditorías.
+- Revisiones periódicas de accesos.
+
+---
+
+# 10. Desarrollo y Mantenimiento de Sistemas
+
+## Medidas Técnicas
+
+Si bien Inmemorian no desarrolla software propio, los ERP, portales web y sistemas administrados por terceros deben estar sujetos a procesos formales de mantenimiento y control de cambios.
+Durante el relevamiento se observó ausencia de documentación formal de cambios y alta dependencia del proveedor externo.
+
+## Procedimientos
+
+- Gestión de cambios.
+- Registro de modificaciones.
+- Pruebas previas.
+- Validación posterior.
+
+## Hardware
+
+- Infraestructura de respaldo para recuperación.
+
+## Software
+
+### GLPI
+GLPI (Gestionnaire Libre de Parc Informatique) es una plataforma de gestión de activos de TI (IT Asset Management - ITAM) y mesa de ayuda (Help Desk) de código abierto que permite administrar inventario, incidencias, cambios, usuarios y documentación tecnológica desde una única herramienta.
+Ventajas
+    ✔ Gestión de tickets.
+    ✔ Gestión documental.
+    ✔ Seguimiento de cambios.
+
+### Jira Service Management
+Jira Service Management es una plataforma de gestión de servicios e incidencias que permite registrar, asignar, monitorear y auditar solicitudes relacionadas con la infraestructura tecnológica. Su implementación facilita la trazabilidad de incidentes, la gestión formal de cambios y la generación de evidencia para auditorías y procesos de mejora continua.
+Ventajas
+    ✔ Trazabilidad.
+    ✔ Aprobación de cambios.
+    ✔ Gestión de incidencias.
+
+## Plan de Acción
+### Corto Plazo
+- Documentar cambios actuales.
+
+### Mediano Plazo
+- Formalizar aprobaciones.
+
+### Largo Plazo
+- Auditorías periódicas.
+
+---
+
+# 11. Administración de la Continuidad de las Actividades
+
+## Medidas Técnicas
+
+Durante el relevamiento se identificó que aproximadamente el 75% de las operaciones dependen de sistemas informáticos, no existen respaldos y existe una fuerte dependencia del proveedor externo.
+Por ello se recomienda implementar un Plan de Continuidad del Negocio y un Plan de Recuperación ante Desastres.
+
+## Procedimientos
+- BIA (Business Impact Analysis).
+- Gestión de contingencias.
+- Recuperación ante desastres.
+- Simulacros periódicos.
+
+## Hardware
+
+### Synology NAS
+Ventajas
+    ✔ Almacenamiento seguro.
+    ✔ Recuperación rápida.
+
+### UPS APC
+Las UPS APC permiten proteger los activos tecnológicos frente a interrupciones del suministro eléctrico y variaciones de tensión. Su implementación contribuye a mantener la disponibilidad de los sistemas, evitar pérdidas de información y reducir el riesgo de daños en el equipamiento crítico de la organización.
+Ventajas
+    ✔ Continuidad eléctrica.
+    ✔ Protección operativa.
+
+### Disco Externo Offline
+Ventajas
+    ✔ Copias aisladas.
+    ✔ Protección frente a ransomware.
+
+## Software
+
+### Veeam Backup
+Ventajas
+    ✔ Recuperación rápida.
+    ✔ Restauración granular.
+
+### Wazuh
+Ventajas
+    ✔ Monitoreo de disponibilidad.
+    ✔ Alertas tempranas.
+
+## Plan de Acción
+### Corto Plazo
+- Implementar respaldos diarios.
+- Identificar procesos críticos.
+
+### Mediano Plazo
+- Documentar planes de contingencia.
+- Realizar pruebas de restauración.
+
+### Largo Plazo
+- Simulacros periódicos.
+- Revisión anual del plan.
+
+---
+
+# 12. Cumplimiento
+
+## Medidas Técnicas
+
+La organización procesa datos personales y bancarios de clientes, por lo que debe garantizar el cumplimiento de la Ley 25.326 de Protección de Datos Personales y alinearse con buenas prácticas de ISO 27001.
+
+## Procedimientos
+
+- Auditorías internas.
+- Gestión de evidencias.
+- Seguimiento de hallazgos.
+- Revisión de cumplimiento legal.
+
+## Hardware
+
+No requiere equipamiento específico.
+
+## Software
+
+### Wazuh
+Ventajas
+    ✔ Evidencia para auditorías.
+    ✔ Registros centralizados.
+
+### GLPI
+Ventajas
+    ✔ Gestión documental.
+    ✔ Gestión de activos.
+
+### Microsoft Purview (Opcional)
+Microsoft Purview es una plataforma de gobierno y protección de datos que permite identificar, clasificar y proteger información sensible dentro del ecosistema Microsoft 365. Su implementación contribuye al cumplimiento normativo, mejora la visibilidad sobre los datos corporativos y reduce el riesgo de exposición de información confidencial.
+Ventajas
+    ✔ Gobierno de datos.
+    ✔ Clasificación de información.
+    ✔ Cumplimiento normativo.
+
+## Plan de Acción
+### Corto Plazo
+- Identificar requisitos legales.
+- Centralizar documentación.
+
+### Mediano Plazo
+- Realizar auditorías internas.
+
+### Largo Plazo
+- Programa de mejora continua.
+- Revisión anual de cumplimiento.
