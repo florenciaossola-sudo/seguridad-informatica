@@ -1945,10 +1945,6 @@ Por ello se recomienda implementar controles operativos que garanticen la dispon
 Synology NAS DS923+ es un dispositivo de almacenamiento en red (NAS - Network Attached Storage) diseñado para centralizar archivos, realizar copias de seguridad automáticas y compartir información de forma segura dentro de una organización.
 
 
-
-![NAS.png](imagenes/NAS.png)
-
-
 Ventajas
     ✔ Centralización de respaldos.
     ✔ Recuperación ante incidentes.
